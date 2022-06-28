@@ -1,21 +1,25 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import './App.css';
-import Home from './screens/Home';
+import Home from './pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Services from './screens/Services';
-import Products from './screens/Products';
-import ContactUs from './screens/ContactUs';
-import SignUp from './screens/SignUp';
-import Marketing from './screens/Marketing';
-import Consulting from './screens/Consulting';
+import Services from './pages/Services';
+import Products from './pages/Products';
+import ContactUs from './pages/ContactUs';
+import SignUp from './pages/SignUp';
+import Marketing from './pages/Marketing';
+import Consulting from './pages/Consulting';
+import HomeScreen from "./screens/home-screen/HomeScreen";
+import ServicesScreen from "./screens/services-screen/ServicesScreen";
+import AboutUsScreen from "./screens/about-screen/AboutUsScreen";
+import ContactUsScreen from "./screens/contact-screen/ContactUsScreen";
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Switch>
-        <Route path='/' exact component={Home} />
+        <Route path='/' exact component={HomeScreen} />
         <Route path='/services' component={Services} />
         <Route path='/products' component={Products} />
         <Route path='/contact-us' component={ContactUs} />

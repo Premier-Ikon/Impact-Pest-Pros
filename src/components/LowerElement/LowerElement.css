@@ -1,0 +1,41 @@
+.element {
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.fa-comment {
+    color: white;
+    font-size: 40px;
+    align-self: center;
+}
+
+.fa-phone {
+    color: white;
+    font-size: 40px;
+    align-self: center;
+}
+
+.fa-paper-plane {
+    color: white;
+    font-size: 40px;
+    align-self: center;
+}
+
+.fa-instagram {
+    color: white;
+    font-size: 50px;
+    align-self: center;
+}
+
+.fa-facebook-f {
+    color: white;
+    font-size: 40px;
+    align-self: center;
+}

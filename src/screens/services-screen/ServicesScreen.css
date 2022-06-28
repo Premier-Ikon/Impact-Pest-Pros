@@ -1,0 +1,35 @@
+.service-background-image {
+    background-image: url("../../assets/HOME-IMAGE.png");
+    background-size: cover;
+    width: 100%;
+    height: 754px;
+}
+
+.service-welcome-container {
+    margin-left: 146px;
+    padding-top: 200px;;
+}
+
+.service-welcome-buttons {
+    margin-left: 146px;
+    padding-top: 10px;;
+}
+.service-bottom-buttons {
+    margin-left: 246px;
+    padding-top: 10px;
+}
+
+.service-button-container {
+    margin-top: 25px;
+}
+
+.service-ad {
+    height: 572px;
+    width: 100%;
+    background-color: rgb(46, 144, 175, 17%);
+}
+
+.fa-squirrel {
+    color: rgb(77, 84, 90);
+    font-size: 600px;
+}

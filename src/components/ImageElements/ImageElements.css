@@ -1,0 +1,40 @@
+.circle-container {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border-radius: 167px;
+}
+
+.circle-element-general {
+    width: 200px;
+    height: 200px;
+    border-radius: 167px;
+    opacity: 0.7;
+    box-shadow: 0px 2px 10px 1px black;
+}
+
+.circle-element-white {
+    width: 200px;
+    height: 200px;
+    border-radius: 167px;
+    opacity: 0.7;
+    box-shadow: 0px 2px 4px 1px white;
+}
+
+.element-text-general {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.element-text-white {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+    color: white;
+}
+
+.mask {
+    background-color: rgba(0, 0, 0, 0.42);
+    height: 100%;
+}

@@ -1,0 +1,12 @@
+.service-left-background-service {
+    background-image: url("../../assets/HOME-IMAGE.png");
+    background-size: cover;
+    width: 792px;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 4px 1px black;
+}
+
+.service-text-container {
+    margin-left: 4%;
+}

@@ -1,0 +1,74 @@
+.process-element-image {
+    width: 792px;
+    height: 400px;
+    border-radius: 15px;
+}
+
+.service-mask {
+    width: 792px;
+    height: 400px;
+    border-radius: 15px;
+    background-color: red;
+}
+
+.process-element-container {
+    display: flex;
+    align-items: center;
+    margin-left:3%;
+    margin-top: 50px;
+}
+
+.service-background-service {
+    background-image: url("../../assets/HOME-IMAGE.png");
+    background-size: cover;
+    width: 792px;
+    height: 400px;
+    margin-left: 4%;
+    border-radius: 15px;
+    box-shadow: 0px 2px 4px 1px black;
+}
+
+.service-background-inspection {
+    background-image: url("../../assets/HOME-IMAGE.png");
+
+}
+
+.service-background-advice {
+    background-image: url("../../assets/HOME-IMAGE.png");
+
+}
+
+.service-background-partner {
+    background-image: url("../../assets/HOME-IMAGE.png");
+
+}
+
+.process-text {
+    font-size: 26px;
+    width: 750px;
+}
+
+.process-text-second {
+    font-size: 34px;
+}
+
+.fa-user {
+    color: rgb(77, 84, 90);
+    font-size: 30px;
+    margin-bottom: 3px;
+}
+
+.process-text-name {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.service-title {
+    display: flex;
+    align-items: center;
+}
+
+.service-mask {
+    background-color: rgba(0, 0, 0, 0.42);
+    height: 100%;
+}
