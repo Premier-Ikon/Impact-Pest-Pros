@@ -1,22 +1,22 @@
 export const MenuItems = [
   {
-    title: 'Marketing',
-    path: '/marketing',
+    title: 'Pest Control',
+    path: '/pest',
     cName: 'dropdown-link'
   },
   {
-    title: 'Consulting',
-    path: '/consulting',
+    title: 'Rodent Control',
+    path: '/rodent',
     cName: 'dropdown-link'
   },
   {
-    title: 'Design',
-    path: '/design',
+    title: 'Bird Control',
+    path: '/bird',
     cName: 'dropdown-link'
   },
   {
-    title: 'Development',
-    path: '/development',
+    title: 'Wildlife Removal',
+    path: '/wildlife',
     cName: 'dropdown-link'
   }
 ];

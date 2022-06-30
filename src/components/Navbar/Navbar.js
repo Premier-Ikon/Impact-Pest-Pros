@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import { Button } from '../Button/Button';
+// import { Button } from '../Button/Button';
+import { Button } from '../Buttons';
+
+import companyLogo from '../../assets/IPP-LOGO1.png'
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Dropdown from '../Dropdown/Dropdown';
@@ -31,18 +34,12 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          EPIC
-          <i class='fab fa-firstdraft' />
+          <a href={'/home'}><img className='navbar-logo' src={companyLogo}/></a>
         </Link>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          <li className='nav-item'>
-            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-              Home
-            </Link>
-          </li>
           <li
             className='nav-item'
             onMouseEnter={onMouseEnter}
@@ -63,7 +60,7 @@ function Navbar() {
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              Products
+              About Us
             </Link>
           </li>
           <li className='nav-item'>
@@ -81,11 +78,13 @@ function Navbar() {
               className='nav-links-mobile'
               onClick={closeMobileMenu}
             >
-              Sign Up
+              Account
             </Link>
           </li>
         </ul>
-        <Button />
+        {/*<Button />*/}
+        <Button>Account</Button>
+
       </nav>
     </>
   );
