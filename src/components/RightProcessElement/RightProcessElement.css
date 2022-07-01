@@ -19,7 +19,7 @@
 }
 
 .service-background-service {
-    background-image: url("../../assets/HOME-IMAGE.png");
+    background-image: url("../../assets/SERVICE_ON_YOUR_TIME.jpg");
     background-size: cover;
     width: 792px;
     height: 400px;
@@ -28,19 +28,14 @@
     box-shadow: 0px 2px 4px 1px black;
 }
 
-.service-background-inspection {
-    background-image: url("../../assets/HOME-IMAGE.png");
-
-}
-
 .service-background-advice {
-    background-image: url("../../assets/HOME-IMAGE.png");
-
-}
-
-.service-background-partner {
-    background-image: url("../../assets/HOME-IMAGE.png");
-
+    background-image: url("../../assets/CUSTOM_TREATMENT_PLANS.jpg");
+    background-size: cover;
+    width: 792px;
+    height: 400px;
+    margin-left: 4%;
+    border-radius: 15px;
+    box-shadow: 0px 2px 4px 1px black;
 }
 
 .process-text {
@@ -49,10 +44,28 @@
 }
 
 .process-text-second {
-    font-size: 34px;
+    font-size: 30px;
 }
 
 .fa-user {
+    color: rgb(77, 84, 90);
+    font-size: 30px;
+    margin-bottom: 3px;
+}
+
+.fa-magnifying-glass {
+    color: rgb(77, 84, 90);
+    font-size: 30px;
+    margin-bottom: 3px;
+}
+
+.fa-handshake {
+    color: rgb(77, 84, 90);
+    font-size: 30px;
+    margin-bottom: 3px;
+}
+
+.fa-clipboard-list {
     color: rgb(77, 84, 90);
     font-size: 30px;
     margin-bottom: 3px;

@@ -4,7 +4,6 @@ import React from "react";
 import {Button} from "../../components/Buttons";
 import RightProcessElement from "../../components/RightProcessElement/RightProcessElement";
 import LeftProcessElement from "../../components/LeftProcessElement/LeftProcessElement";
-import HomeImage from '../../assets/HOME-IMAGE.png'
 
 
 function ServicesScreen() {
@@ -41,22 +40,29 @@ function ServicesScreen() {
               </div>
               <div className="process-elements">
                   <RightProcessElement icon={"fa-regular fa-user"} name={"Service"} secondName={"Service on your time"} description={"With online scheduling and account management, 24/7 customer support and on-our-way text alerts, we work around your schedule, not the other way around."} image={"service"}/>
-                  <LeftProcessElement icon={"fa-regular fa-user"} name={"Service"} secondName={"Service on your time"} description={"With online scheduling and account management, 24/7 customer support and on-our-way text alerts, we work around your schedule, not the other way around."} image={"service"}/>
-                  <RightProcessElement icon={"fa-regular fa-user"} name={"Service"} secondName={"Service on your time"} description={"With online scheduling and account management, 24/7 customer support and on-our-way text alerts, we work around your schedule, not the other way around."} image={"service"}/>
-                  <LeftProcessElement icon={"fa-regular fa-user"} name={"Service"} secondName={"Service on your time"} description={"With online scheduling and account management, 24/7 customer support and on-our-way text alerts, we work around your schedule, not the other way around."} image={"service"}/>
+                  <LeftProcessElement icon={"fa-regular fa-magnifying-glass"} name={"Inspection"} secondName={"Inspections done right"} description={"Our experts are trained in your local pest populations to identify your infestation, spot existing and potential issues and deliver the best, most comprehensive treatments that start working immediately."} image={"inspection"}/>
+                  <RightProcessElement icon={"fa-regular fa-clipboard-list"} name={"Advice"} secondName={"Customized treatment plans"} description={"We’ll explain your pest problem in plain language and work with you to develop your own customized solution to nix your pests and keep them from coming back, 365 days a year."} image={"advice"}/>
+                  <LeftProcessElement icon={"fa-regular fa-handshake"} name={"Partner"} secondName={"Your pest-free partners"} description={"Once we start treatment, you can relax. We guarantee we’ll nix your pests and keep them from coming back. Or we'll come back between treatments at no additional cost to you."} image={"partner"}/>
               </div>
           </div>
 
           <div className="service-ad">
-              <div>
-                  <p>Rodent Control Starting As Low As $70/mo.**</p>
+              <div className="general-header">
+                  <h2>Rodent Control Starting As Low As $70/mo.**</h2>
               </div>
-              <div>
+              <div className="service-ad-container">
                   <div>
                       <i className="fa-regular fa-bug"></i>
                   </div>
-                  <div>
-                      <p className="description">Rodents are swarming nationwide and your home needs protection. Luckily our rodent protection service starts as low as $70/mo. Click below to schedule your FREE inspection and ensure your area is protected from insects.</p>
+                  <div className="ad-text-container">
+                      <div className="ad-text">
+
+                          <p className="description">Rodents are swarming nationwide and your home needs protection. Luckily our rodent protection service starts as low as $70/mo. Click below to schedule your FREE inspection and ensure your area is protected from insects.</p>
+                      </div>
+                      <div className="ad-button">
+
+                          <Button buttonStyle={"btn--long"}>Schedule Free Inspection</Button>
+                      </div>
                   </div>
               </div>
           </div>

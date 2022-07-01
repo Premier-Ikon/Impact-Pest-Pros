@@ -15,7 +15,7 @@ function LeftProcessElement({icon, name, secondName, description, image}) {
                     <p className={`process-text-name`}>{name}</p>
                 </div>
                 <div>
-                    <p className={`process-text-second`}>{secondName}</p>
+                    <h2 className={`process-text-second`}>{secondName}</h2>
                     <p className={`process-text`}>{description}</p>
                 </div>
             </div>

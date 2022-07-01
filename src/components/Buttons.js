@@ -7,7 +7,8 @@ const STYLES = [
     'btn--common',
     'btn--circle',
     'btn--service',
-    'btn--grey'
+    'btn--grey',
+    'btn--long'
 ]
 
 const SIZES = [

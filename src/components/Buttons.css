@@ -55,6 +55,23 @@
     transition: 250ms;
 }
 
+.btn--long {
+    height: 40px;
+    width: 325px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn--long:hover {
+    background-color: rgba(255, 255, 255, 0.55);
+    color: rgb(40, 153, 217);
+transition: 250ms;
+}
+
 .btn--service {
     border-radius: 32px;
     background-color: rgb(217, 217, 217);

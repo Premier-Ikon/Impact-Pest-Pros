@@ -1,5 +1,5 @@
 .service-background-image {
-    background-image: url("../../assets/HOME-IMAGE.png");
+    background-image: url("../../assets/SERVICE-IMAGE.jpg");
     background-size: cover;
     width: 100%;
     height: 754px;
@@ -24,6 +24,8 @@
 }
 
 .service-ad {
+    margin-top: 100px;
+    padding-top: 150px;
     height: 572px;
     width: 100%;
     background-color: rgb(46, 144, 175, 17%);
@@ -32,4 +34,36 @@
 .fa-squirrel {
     color: rgb(77, 84, 90);
     font-size: 600px;
+}
+
+.fa-bug {
+    font-size: 180px;
+    color: rgb(31, 49, 58, 80);
+}
+
+.ad-text {
+    font-size: 20px;
+    width: 400px;
+    color: rgb(31, 49, 58, 80);
+    margin-left: 80px;
+    font-weight: 500;
+    align-content: center;
+}
+
+.ad-text-container {
+
+}
+.ad-button {
+    margin-left: 100px;
+}
+
+.service-ad-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.fa-magnifying-glass {
+
 }
