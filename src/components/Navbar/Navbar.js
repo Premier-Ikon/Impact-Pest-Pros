@@ -56,7 +56,7 @@ function Navbar() {
           </li>
           <li className='nav-item'>
             <Link
-              to='/products'
+              to='/about-us'
               className='nav-links'
               onClick={closeMobileMenu}
             >
@@ -83,7 +83,7 @@ function Navbar() {
           </li>
         </ul>
         {/*<Button />*/}
-        <Button>Account</Button>
+        <Button path={"/account"} target={"_blank"}>Account</Button>
 
       </nav>
     </>

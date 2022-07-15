@@ -1,16 +1,52 @@
 import './ServicesScreen.css'
-import React from "react";
+import React, {useState} from "react";
 
 import {Button} from "../../components/Buttons";
 import RightProcessElement from "../../components/RightProcessElement/RightProcessElement";
 import LeftProcessElement from "../../components/LeftProcessElement/LeftProcessElement";
-
+import FaqElement from "../../components/FaqElement/FaqElement";
 
 function ServicesScreen() {
+
+    const [faqs, setfaqs] = useState([
+        {
+            question: 'What does your guarantee include?',
+            answer: 'good',
+            open: false
+        },
+        {
+            question: 'Is the inspection free?',
+            answer: 'megh',
+            open: false
+        },
+        {
+            question: 'Are your technicians trained and certified?',
+            answer: 'meh',
+            open: false
+        },
+        {
+            question: 'What other services besides pest control do you offer?',
+            answer: 'meh',
+            open: false
+        }
+    ])
+
+    const toggleFaq = index => {
+        setfaqs(faqs.map((faq, i) => {
+            if (i === index) {
+                faq.open = !faq.open
+            }else {
+                faq.open = false;
+            }
+
+            return  faq;
+        }))
+    }
+
     return(
       <div>
         <div className="service-background-image">
-            <div className="mask">
+            <div className="service-background-mask">
                 <div className="service-welcome-container">
                     <div className="welcome-header">
                         <h1>Impact Pest Pros</h1>
@@ -21,15 +57,15 @@ function ServicesScreen() {
                 </div>
                 <div className="service-button-container">
                     <div className='service-welcome-buttons'>
-                        <Button buttonStyle={"btn--service"}>Pest Control</Button>
-                        <Button buttonStyle={"btn--service"}>Bird Control</Button>
+                        <Button buttonStyle={"btn--service"} path={"/pest-control"}>Pest Control</Button>
+                        <Button buttonStyle={"btn--service"} path={"/bird-control"}>Bird Control</Button>
                     </div>
                     <div className='service-welcome-buttons'>
-                        <Button buttonStyle={"btn--service"}>Rodent Control</Button>
-                        <Button buttonStyle={"btn--service"}>Gopher Control</Button>
+                        <Button buttonStyle={"btn--service"} path={"/rodent-control"}>Rodent Control</Button>
+                        <Button buttonStyle={"btn--service"} path={"/gopher-control"}>Gopher Control</Button>
                     </div>
                     <div className='service-bottom-buttons'>
-                        <Button buttonStyle={"btn--grey"}>Get Started</Button>
+                        <Button buttonStyle={"btn--grey"} path={"/contact-us"}>Get Started</Button>
                     </div>
                 </div>
             </div>
@@ -67,7 +103,20 @@ function ServicesScreen() {
               </div>
           </div>
 
+          <div className="faq-section">
+              <div className="faq-items">
+                  <div className="general-header">
+                      <h2>Frequently Asked Questions</h2>
+                      <div className="faq-line"/>
+                  </div>
+              </div>
+              <div className="faq-container">
+                  {faqs.map((faq, i) => (
+                      <FaqElement faq={faq} index={i} toggleFaq={toggleFaq}/>
+                  ))}
+              </div>
 
+          </div>
       </div>
     );
 }

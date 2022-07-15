@@ -29,8 +29,8 @@ function HomeScreen() {
                         </div>
                     </div>
                     <div className='welcome-buttons'>
-                        <Button buttonStyle={"btn--common"}>Services</Button>
-                        <Button buttonStyle={"btn--common"}>About Us</Button>
+                        <Button buttonStyle={"btn--common"} path={"/services"}>Services</Button>
+                        <Button buttonStyle={"btn--common"} path={"/about-us"} >About Us</Button>
                     </div>
                 </div>
             </div>
@@ -85,7 +85,7 @@ function HomeScreen() {
                     <h2>Get a FREE quote today</h2>
                 </div>
                 <div className="quote-button">
-                    <Button buttonStyle={"btn--common"}>Free Quote</Button>
+                    <Button buttonStyle={"btn--common"} path={"/contact-us"} target={"_blank"}>Free Quote</Button>
                 </div>
             </div>
         </div>

@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Services from './pages/Services';
 import Products from './pages/Products';
-import ContactUs from './pages/ContactUs';
+// import ContactUs from './pages/ContactUs';
 import SignUp from './pages/SignUp';
 import Marketing from './pages/Marketing';
 import Consulting from './pages/Consulting';
@@ -13,6 +13,10 @@ import HomeScreen from "./screens/home-screen/HomeScreen";
 import ServicesScreen from "./screens/services-screen/ServicesScreen";
 import AboutUsScreen from "./screens/about-screen/AboutUsScreen";
 import ContactUsScreen from "./screens/contact-screen/ContactUsScreen";
+import PestControlScreen from "./screens/pest-control-screen/PestControlScreen";
+import BirdControlScreen from "./screens/bird-control-screen/BirdControlScreen";
+import RodentControlScreen from "./screens/rodent-control-screen/RodentControlScreen";
+import WildlifeScreen from "./screens/wildlife-screen/WildlifeScreen";
 
 function App() {
   return (
@@ -21,10 +25,16 @@ function App() {
       <Switch>
         <Route path='/' exact component={HomeScreen} />
         <Route path='/services' component={ServicesScreen} />
-        <Route path='/contact-us' component={ContactUs} />
-        <Route path='/sign-up' component={SignUp} />
-        <Route path='/marketing' component={Marketing} />
-        <Route path='/consulting' component={Consulting} />
+        <Route path='/contact-us' component={ContactUsScreen} />
+        <Route path='/about-us' component={AboutUsScreen} />
+        <Route path='/pest-control' component={PestControlScreen} />
+        <Route path='/rodent-control' component={RodentControlScreen} />
+        <Route path='/gopher-control' component={RodentControlScreen} />
+        <Route path='/bird-control' component={BirdControlScreen} />
+        <Route path='/wild-life' component={WildlifeScreen} />
+        <Route path='/account' component={() => {
+          window.location.href = "https://impactpestpros.pestportals.com/landing/index";
+        }} />
       </Switch>
     </Router>
   );

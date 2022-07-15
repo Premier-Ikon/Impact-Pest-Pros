@@ -33,6 +33,7 @@
     height: 572px;
     width: 100%;
     background-color: rgb(46, 144, 175, 17%);
+    border-radius: 10px;
 }
 
 .fa-squirrel {
@@ -70,4 +71,31 @@
 
 .fa-magnifying-glass {
 
+}
+
+.faq-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.service-background-mask {
+    background-color: rgba(0, 0, 0, 0.22);
+    height: 100%;
+}
+
+.faq-container {
+    margin-top: 60px;
+}
+
+.faq-line {
+    border-bottom: 10px solid;
+    width: 510px;
+    margin-left: 50px;
+    margin-top: 15px;
+    border-color: rgb(46, 144, 175, 17%);
+}
+
+.faq-items {
+    display: flex;
+    justify-content: center;
 }
