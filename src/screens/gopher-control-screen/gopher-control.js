@@ -2,7 +2,7 @@ import './gopher-control.css'
 import React from "react";
 
 
-function WildlifeScreen() {
+function GopherControl() {
     return(
         <div>
             <p>Gopher</p>
@@ -10,4 +10,4 @@ function WildlifeScreen() {
     );
 }
 
-export default WildlifeScreen;
+export default GopherControl;

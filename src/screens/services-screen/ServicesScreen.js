@@ -62,7 +62,7 @@ function ServicesScreen() {
                     </div>
                     <div className='service-welcome-buttons'>
                         <Button buttonStyle={"btn--service"} path={"/rodent-control"}>Rodent Control</Button>
-                        <Button buttonStyle={"btn--service"} path={"/gopher-control"}>Gopher Control</Button>
+                        <Button buttonStyle={"btn--service"} path={"/bee-removal"}>Bee Removal</Button>
                     </div>
                     <div className='service-bottom-buttons'>
                         <Button buttonStyle={"btn--grey"} path={"/contact-us"}>Get Started</Button>

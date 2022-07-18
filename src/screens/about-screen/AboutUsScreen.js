@@ -65,8 +65,6 @@ function AboutUsScreen() {
 
                             </button>
                         </Link>
-                        {/*<img src={JoinUs} className="button-image"/>*/}
-
                     </div>
                     <div className="mission-body-elements">
                         <div className="core-values">

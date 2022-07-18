@@ -5,18 +5,18 @@ export const MenuItems = [
     cName: 'dropdown-link'
   },
   {
-    title: 'Rodent Control',
-    path: '/rodent-control',
-    cName: 'dropdown-link'
-  },
-  {
     title: 'Bird Control',
     path: '/bird-control',
     cName: 'dropdown-link'
   },
   {
-    title: 'Wildlife Removal',
-    path: '/wild-life',
+    title: 'Rodent Control',
+    path: '/rodent-control',
+    cName: 'dropdown-link'
+  },
+  {
+    title: 'Bee Removal',
+    path: '/bee-removal',
     cName: 'dropdown-link'
   }
 ];

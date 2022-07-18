@@ -6,10 +6,10 @@
 }
 
 .background-image {
-    background-image: url("../../assets/HOME-IMAGE.png");
+    background-image: url("../../assets/HOME-IMAGE-2.jpg");
     background-size: cover;
     width: 100%;
-    height: 754px;
+    height: 800px;
 }
 
 /*.mask {*/
@@ -63,7 +63,7 @@
 }
 
 .rodent-control-container {
-    margin-top: 200px;
+    margin-top: 125px;
 
 }
 

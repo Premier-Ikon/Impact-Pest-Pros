@@ -9,7 +9,9 @@ const STYLES = [
     'btn--circle',
     'btn--service',
     'btn--grey',
-    'btn--long'
+    'btn--long',
+    'btn--services',
+    'btn--services-grey'
 ]
 
 export const Button = ({

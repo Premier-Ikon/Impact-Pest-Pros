@@ -16,7 +16,7 @@ import ContactUsScreen from "./screens/contact-screen/ContactUsScreen";
 import PestControlScreen from "./screens/pest-control-screen/PestControlScreen";
 import BirdControlScreen from "./screens/bird-control-screen/BirdControlScreen";
 import RodentControlScreen from "./screens/rodent-control-screen/RodentControlScreen";
-import WildlifeScreen from "./screens/wildlife-screen/WildlifeScreen";
+import BeeRemovalScreen from "./screens/bee-removal-screen/BeeRemovalScreen";
 
 function App() {
   return (
@@ -29,9 +29,8 @@ function App() {
         <Route path='/about-us' component={AboutUsScreen} />
         <Route path='/pest-control' component={PestControlScreen} />
         <Route path='/rodent-control' component={RodentControlScreen} />
-        <Route path='/gopher-control' component={RodentControlScreen} />
+        <Route path='/bee-removal' component={BeeRemovalScreen} />
         <Route path='/bird-control' component={BirdControlScreen} />
-        <Route path='/wild-life' component={WildlifeScreen} />
         <Route path='/account' component={() => {
           window.location.href = "https://impactpestpros.pestportals.com/landing/index";
         }} />
