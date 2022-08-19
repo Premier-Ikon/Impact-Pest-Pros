@@ -1,0 +1,301 @@
+.initial-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -550px;
+}
+
+.about-us-screen {
+    background-color: rgb(0, 154, 220, 8%);
+    padding-bottom: 50px;
+}
+
+.top-box {
+    height: 530px;
+    width: 100%;
+    background-color: rgb(0, 154, 220, 100);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /*position: absolute;*/
+}
+
+.general-header-about {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding-top: 150px;
+    position: relative;
+}
+
+.general-header-image {
+    background-image: url("../../assets/ABOUT_US.jpg");
+    background-size: cover;
+    width: 645px;
+    height: 396px;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 0px 2px 8px 1px black;
+}
+
+.mask-about {
+    background-color: rgba(0, 0, 0, 0.12);
+    height: 100%;
+    border-radius: 10px;
+}
+
+.about-message {
+    color: black;
+    font-size: 15px;
+    width: 550px;
+    /*!*position: absolute;*!*/
+    margin-top: 25px;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.about-text {
+    align-self: center;
+}
+
+.mission-container {
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.mission-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.mission-header-mobile {
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.mission-statement {
+    width: 638px;
+    height: 200px;
+    background-color: rgb(0, 154, 220, 100);
+    border-radius: 10px;
+}
+
+.vision-statement {
+    width: 378px;
+    height: 200px;
+    background-color: rgb(66, 118, 141, 100);
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.mission-body {
+    display: flex;
+    justify-content: center;
+}
+
+.mission-body-mobile {
+    display: none;
+    justify-content: center;
+}
+
+.mission-button {
+    width: 335px;
+    height: 345px;
+    background-color: rgb(2, 179, 255, 24%);
+    border-radius: 10px;
+    /*margin-top: 10px;*/
+}
+
+.mission-body-elements {
+    margin-left: 20px;
+}
+
+.core-values {
+    width: 685px;
+    height: 150px;
+    background-color: rgb(0, 154, 220, 100);
+    border-radius: 10px;
+}
+
+.company-history {
+    width: 685px;
+    height: 175px;
+    background-color: rgb(66, 118, 141, 100);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/*.box-header {*/
+/*    margin-left: 20px;*/
+/*    margin-top: 10px;*/
+/*}*/
+
+.header-text-box {
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+.box-message-text {
+    color: rgb(179, 231, 253);
+    font-size: 20px;
+}
+
+.box-message {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    line-height: 30px;
+
+}
+
+.button-image {
+    width: 227px;
+    height: 162px;
+}
+
+.mission-button-style {
+    background-color: transparent;
+    width: 257px;
+    height: 162px;
+    margin-left: 35px;
+    margin-top: 75px;
+    border-color: transparent;
+}
+
+.box-header-lower {
+
+}
+
+.icon-container-mission {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 960px) {
+    .general-header-image {
+        background-image: url("../../assets/ABOUT_US.jpg");
+        background-size: cover;
+        width: 385px;
+        height: 236px;
+        border-radius: 10px;
+        margin-top: 50px;
+        box-shadow: 0px 2px 8px 1px black;
+    }
+
+    .about-message {
+        color: black;
+        font-size: 15px;
+        width: 365px;
+        /*!*position: absolute;*!*/
+        margin-top: 25px;
+        text-align: center;
+        line-height: 40px;
+        margin-left: 0px;
+        padding-left: 28px;
+        padding-right: 0px;
+    }
+
+    .header-text-box {
+        color: white;
+        font-size: 18px;
+        margin-left: 20px;
+        padding-top: 10px;
+    }
+
+    .box-message-text {
+        color: rgb(179, 231, 253);
+        font-size: 15px;
+    }
+
+    .box-message {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 5px;
+        line-height: 20px;
+    }
+
+    .mission-header {
+        display: none;
+    }
+
+    .mission-header-mobile {
+        display: flex;
+    }
+
+    .mission-statement {
+        width: 370px;
+        height: 130px;
+        background-color: rgb(0, 154, 220, 100);
+        border-radius: 10px;
+        margin-left: 0px;
+    }
+
+    .vision-statement {
+        width: 370px;
+        height: 130px;
+        background-color: rgb(66, 118, 141, 100);
+        border-radius: 10px;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .core-values {
+        width: 370px;
+        height: 110px;
+        background-color: rgb(0, 154, 220, 100);
+        border-radius: 10px;
+    }
+
+    .company-history {
+        width: 370px;
+        height: 144px;
+        background-color: rgb(66, 118, 141, 100);
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    .mission-body {
+        display: none;
+    }
+
+    .mission-body-mobile {
+        display: flex;
+    }
+
+    .mission-body-elements {
+        margin-left: 0px;
+    }
+
+    .initial-container {
+        display: flex;
+        justify-content: center;
+        margin-top: -395px;
+    }
+
+    .top-box {
+        height: 300px;
+        width: 100%;
+        background-color: rgb(0, 154, 220, 100);
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        /*position: absolute;*/
+    }
+
+    .mission-button {
+        display: revert;
+    }
+
+    .box-message {
+        margin-bottom: 15px;
+    }
+}

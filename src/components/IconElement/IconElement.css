@@ -1,0 +1,52 @@
+.icon-element-text {
+    font-size: 26px;
+}
+
+.fa-magnifying-glass {
+    color: rgb(77, 84, 90);
+    font-size: 50px;
+    margin-bottom: 3px;
+}
+
+.fa-user-shield {
+    color: rgb(77, 84, 90);
+    font-size: 50px;
+    margin-bottom: 3px;
+}
+
+.fa-house-chimney {
+    color: rgb(77, 84, 90);
+    font-size: 50px;
+    margin-bottom: 3px;
+}
+
+.icon-container {
+    text-align: center;
+    /*display: table;*/
+    align-items: center;
+}
+
+.break-point {
+    background-color: rgb(0, 154, 220);
+    height: 8px;
+    width: 120px;
+    margin-left: 25%;
+    margin-bottom: 20px;
+}
+
+.element-quote {
+    font-size: 14px;
+    width: 250px;
+}
+
+@media screen and (max-width: 960px) {
+    .element-quote {
+        width: 180px;
+        margin-left: 5%;
+    }
+
+    .break-point {
+        margin-left: 20%;
+    }
+
+}

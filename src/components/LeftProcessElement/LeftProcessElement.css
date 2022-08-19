@@ -1,0 +1,21 @@
+.service-left-background-inspection {
+    background-image: url("../../assets/INSPECTION_DONE_RIGHT.jpg");
+    background-size: cover;
+    width: 792px;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 4px 1px black;
+}
+
+.service-left-background-partner {
+    background-image: url("../../assets/PEST_FREE_PARTNERS.jpg");
+    background-size: cover;
+    width: 792px;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 4px 1px black;
+}
+
+.service-text-container {
+    margin-left: 4%;
+}

@@ -1,0 +1,283 @@
+.pest-control {
+
+}
+.background-image-pest {
+    background-image: url("../../assets/PEST-CONTROL.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 754px;
+}
+
+.welcome-container-service {
+    margin-left: 146px;
+    padding-top: 250px;;
+}
+
+.welcome-body-service {
+    color: white;
+    font-size: 25px;
+    font-weight: 00;
+    margin-right: 30%;
+    line-height: 35px;
+}
+
+.space {
+    margin-top: 25px;
+}
+
+.grey-button {
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 30px;
+    color: rgb(140, 140, 140);
+}
+
+.grey-button:hover {
+    text-decoration: underline;
+}
+
+.current-button {
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 30px;
+    color: white;
+}
+
+.service-tab {
+    position: absolute;
+    top: 115px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 75px;
+}
+
+.card-container-mobile {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 75px;
+    align-content: center;
+}
+
+.mask {
+    background-color: rgba(0, 0, 0, 0.19);
+    height: 100%;
+}
+
+.service-ad-header {
+    margin-top: 150px;
+}
+
+.service-ad-header-mobile {
+    margin-top: 150px;
+    display: none;
+}
+
+.internal-ad {
+    margin-top: 150px;
+    width: 100%;
+    height: 175px;
+    background-color: rgb(0, 154, 220, 10%);
+    border-radius: 10px;
+}
+
+.vertical-line {
+    background-color: black;
+    height: 145px;
+    width: 6px;
+    margin-left: 350px;
+    position: absolute;
+    margin-top: 15px;
+}
+
+.ad-logo {
+    margin-top: 20px;
+    margin-left: 200px;
+    width: 105px;
+    height: 135px;
+}
+
+.image-container {
+    display: flex;
+}
+
+.service-ad-text {
+    margin-right: 10%;
+    margin-left: 100px;
+    margin-top: 30px;
+    font-size: 25px;
+    text-overflow: ellipsis;
+}
+
+.service-ad-text p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.test {
+    text-overflow: ellipsis;
+}
+
+.mobile-container {
+    display: flex;
+    justify-content: center;
+}
+
+.service-ad-button {
+    margin-left: 100px;
+    border-color: transparent;
+    background-color: rgb(0, 154, 220);
+    color: white;
+    font-size: 15px;
+    width: 230px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.service-ad-button:hover {
+    background-color: rgb(0, 154, 220, 70%);
+}
+
+.monthly-service-container {
+    padding-top: 130px;
+    margin-bottom: 100px;
+}
+
+.monthly-service-container-mobile {
+    padding-top: 130px;
+    margin-bottom: 100px;
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .monthly-service-container {
+        display: none;
+    }
+
+    .monthly-service-container-mobile {
+        display: revert;
+    }
+
+    .welcome-container-service {
+        margin-left: 0px;
+        padding-top: 175px;;
+    }
+
+    .welcome-body-service {
+        color: white;
+        font-size: 25px;
+        font-weight: 00;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 25px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .service-tab {
+        position: absolute;
+        top: 115px;
+        left: 30px;
+    }
+
+    .service-ad-header {
+        display: none;
+    }
+
+    .service-ad-header-mobile {
+         display: revert;
+    }
+
+    .internal-ad {
+        margin-top: 150px;
+        width: 100%;
+        height: 175px;
+        background-color: rgb(0, 154, 220, 10%);
+        border-radius: 10px;
+    }
+
+    .vertical-line {
+        background-color: black;
+        height: 6px;
+        width: 75%;
+        margin-left: 12%;
+        position: absolute;
+        margin-top: 15px;
+        border-radius: 3px;
+    }
+
+    .image-container {
+        display: revert;
+        justify-content: center;
+    }
+
+
+    .service-ad-text {
+        margin-right: 20px;
+        margin-left:20px;
+        margin-top: 30px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .ad-logo {
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 105px;
+        height: 135px;
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .internal-ad {
+        margin-top: 150px;
+        padding-top: 50px;
+        width: 100%;
+        height: 550px;
+        background-color: rgb(0, 154, 220, 10%);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .service-ad-button {
+        display: revert;
+        margin-top: 25px;
+        font-size: 20px;
+    }
+
+    .grey-button {
+        display: revert;
+    }
+
+    .current-button {
+        display: revert;
+    }
+
+    .service-ad-text p {
+        overflow: revert;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+    }
+
+    .internal-ad-button {
+        margin-top: 30px;
+    }
+
+
+
+
+}
