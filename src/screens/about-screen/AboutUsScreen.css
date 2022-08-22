@@ -181,6 +181,17 @@
     justify-content: space-evenly;
 }
 
+.btn-button {
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn-button:hover {
+    color: rgb(0, 154, 220, 100);
+}
+
 @media screen and (max-width: 960px) {
     .general-header-image {
         background-image: url("../../assets/ABOUT_US.jpg");

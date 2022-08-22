@@ -44,7 +44,7 @@ function RodentControlScreen() {
                 <div className="mask">
                     <div className="welcome-container-service">
                         <div className="service-tab">
-                            <Link to={"/"}>
+                            <Link to={"/services"}>
                                 <button className="grey-button">
                                     <p>Home/</p>
                                 </button>
@@ -63,7 +63,7 @@ function RodentControlScreen() {
                         </div>
                     </div>
                     <div className='welcome-buttons'>
-                        <Button buttonStyle={"btn--services"} path={"/services"}>Free Quote</Button>
+                        <Button buttonStyle={"btn--services"} path={"/contact-us"}>Free Quote</Button>
                     </div>
                 </div>
             </div>
@@ -122,7 +122,7 @@ function RodentControlScreen() {
             <div className="internal-ad">
                 <div className="image-container">
                     <div className="logo-container">
-                        <img src={AdLogo} className="ad-logo"/>
+                        <img src={AdLogo} className="ad-logo" alt={"ad-logo"}/>
                     </div>
                     <div className="vertical-line"/>
                     <div>

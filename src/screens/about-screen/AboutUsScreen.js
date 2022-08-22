@@ -1,11 +1,6 @@
 import './AboutUsScreen.css'
-import React from "react";
 import {Link} from "react-router-dom";
 import JoinUs from "../../icons/JOIN_US.png"
-import Crown from "../../icons/CROWN.png"
-import Group from "../../icons/GROUP.png"
-import Consistent from "../../icons/CONSISTENT.png"
-import HandShake from "../../icons/HAND_SHAKE.png"
 import {Button} from "../../components/Buttons";
 
 
@@ -29,8 +24,9 @@ function AboutUsScreen() {
                             do
                             return, we will come back -- at no additional cost to you. We strive to offer the best plans
                             in the area, and will tailor to our customers needs. If you are ever experiencing a problem be sure to give us a call.
-                            <Button buttonStyle={"btn--contact"} onClick={() => window.open( 'tel: 951-458-3966', '_blank')}>(951)458-3966</Button>
-
+                            <button className={"btn-button"} onClick={() => window.open( 'tel: 951-458-3966', '_blank')}>
+                                <p> (951)458-3966</p>
+                            </button>
                         </h4>
                     </div>
 
@@ -80,7 +76,7 @@ function AboutUsScreen() {
                     <div className="mission-button">
                         <Link to={"/contact-us"}>
                             <button className={'mission-button-style'}>
-                                <img src={JoinUs} className="button-image"/>
+                                <img src={JoinUs} className="button-image" alt={"button"}/>
 
                             </button>
                         </Link>

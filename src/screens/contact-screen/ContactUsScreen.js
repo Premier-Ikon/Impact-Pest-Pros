@@ -1,7 +1,6 @@
 import './ContactUsScreen.css'
-import React, {useState, useEffect, useRef} from "react";
+import React, {useState, useRef} from "react";
 import {Button} from "../../components/Buttons";
-import {Link} from "react-router-dom";
 import emailjs from '@emailjs/browser';
 
 function ContactUsScreen() {
@@ -160,25 +159,30 @@ function ContactUsScreen() {
                 <div className="contact-info">
                     <h3 className="contact-header-text-right">Contact Information</h3>
                     <div className="contact-info-element">
-                        <Button buttonStyle={"btn--contact"} buttonIcon={"fa-solid fa-phone"} onClick={() => window.open( 'tel: 951-458-3966', '_blank')}/>
+                        <button className="contact-info-button" onClick={() => window.open( 'tel: 951-458-3966', '_blank')}>
+                            <i className="fa-solid fa-phone" style={{marginRight: "10px"}}/>
+                        </button>
+
                         <button className="contact-info-button" onClick={() => window.open( 'tel: 951-458-3966', '_blank')}>
                             <p>(951)458-3966</p>
                         </button>
-
-                        {/*<p className="contact-info-text">(951)458-3966</p>*/}
                     </div>
                     <div className="contact-info-element-bottom">
-                        <Button buttonStyle={"btn--contact"} buttonIcon={"fa-solid fa-envelope"} onClick={() => window.open( "mailto: info@impactpestpros.com?subject=Online Inquiry")}/>
+                        <button className="contact-info-button" onClick={() => window.open( "mailto: info@impactpestpros.com?subject=Online Inquiry")}>
+                            <i className="fa-solid fa-envelope" style={{marginRight: "10px"}}/>
+                        </button>
+
                         <button className="contact-info-button" onClick={() => window.open( "mailto: info@impactpestpros.com?subject=Online Inquiry")}>
                             <p>info@impactpestpros.com</p>
                         </button>
-
-                        {/*<p className="contact-info-text"> info@impactpestpros.com </p>*/}
                     </div>
                     <div className="contact-icons">
-                        <Button buttonStyle={"btn--contact"} buttonIcon={"fa-brands fa-instagram"} onClick={() => window.open( 'https://www.instagram.com/impactpestpros/', '_blank')}/>
-                        <Button buttonStyle={"btn--contact"} buttonIcon={"fa-brands fa-facebook"} onClick={() => window.open( 'https://www.facebook.com/impactpestpros', '_blank')}/>
-
+                        <button className="contact-info-button" onClick={() => window.open( 'https://www.instagram.com/impactpestpros/', '_blank')}>
+                            <i className="fa-brands fa-instagram" style={{marginRight: "10px"}}/>
+                        </button>
+                        <button className="contact-info-button" onClick={() => window.open( 'https://www.facebook.com/impactpestpros', '_blank')}>
+                            <i className="fa-brands fa-facebook" style={{marginRight: "10px"}}/>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -187,23 +191,28 @@ function ContactUsScreen() {
                     <div className="contact-info">
                         <h3 className="contact-header-text-right">Contact Information</h3>
                         <div className="contact-info-element">
-                            <Button buttonStyle={"btn--contact"} buttonIcon={"fa-solid fa-phone"} onClick={() => window.open( 'tel: 951-458-3966', '_blank')}/>
+                            <button className="contact-info-button" onClick={() => window.open( 'tel: 951-458-3966', '_blank')}>
+                                <i className="fa-solid fa-phone" style={{marginRight: "10px"}}/>
+                            </button>
                             <button className="contact-info-button" onClick={() => window.open( 'tel: 951-458-3966', '_blank')}>
                                 <p>(951)458-3966</p>
                             </button>
-                            {/*<p className="contact-info-text">(951)458-3966</p>*/}
                         </div>
                         <div className="contact-info-element-bottom">
-                            <Button buttonStyle={"btn--contact"} buttonIcon={"fa-solid fa-envelope"} onClick={() => window.open( "mailto: info@impactpestpros.com?subject=Online Inquiry")}/>
+                            <button className="contact-info-button" onClick={() => window.open( "mailto: info@impactpestpros.com?subject=Online Inquiry")}>
+                                <i className="fa-solid fa-envelope" style={{marginRight: "10px"}}/>
+                            </button>
                             <button className="contact-info-button" onClick={() => window.open( "mailto: info@impactpestpros.com?subject=Online Inquiry")}>
                                 <p>info@impactpestpros.com</p>
                             </button>
-                            {/*<p className="contact-info-text"> info@impactpestpros.com </p>*/}
                         </div>
                         <div className="contact-icons">
-                            <Button buttonStyle={"btn--contact"} buttonIcon={"fa-brands fa-instagram"} onClick={() => window.open( 'https://www.instagram.com/impactpestpros/', '_blank')}/>
-                            <Button buttonStyle={"btn--contact"} buttonIcon={"fa-brands fa-facebook"} onClick={() => window.open( 'https://www.facebook.com/impactpestpros', '_blank')}/>
-
+                            <button className="contact-info-button" onClick={() => window.open( 'https://www.instagram.com/impactpestpros/', '_blank')}>
+                                <i className="fa-brands fa-instagram" style={{marginRight: "10px"}}/>
+                            </button>
+                            <button className="contact-info-button" onClick={() => window.open( 'https://www.facebook.com/impactpestpros', '_blank')}>
+                                <i className="fa-brands fa-facebook" style={{marginRight: "10px"}}/>
+                            </button>
                         </div>
                     </div>
                 </div>

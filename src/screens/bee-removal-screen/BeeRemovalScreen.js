@@ -3,7 +3,6 @@ import React, {useState} from "react";
 import {Link} from "react-router-dom";
 import {Button} from "../../components/Buttons";
 import ServiceCard from "../../components/ServiceCards/ServiceCard";
-import {ExclusionElement} from "../../components/ExclusionElement/ExclusionElement";
 import AdLogo from "../../assets/AD-LOGO.png";
 import FaqElement from "../../components/FaqElement/FaqElement";
 import {IconElement} from "../../components/IconElement/IconElement";
@@ -44,7 +43,7 @@ function BeeRemovalScreen() {
             <div className="background-image-bird">
                 <div className="welcome-container-service">
                     <div className="service-tab">
-                        <Link to={"/"}>
+                        <Link to={"/services"}>
                             <button className="grey-button">
                                 <p>Home/</p>
                             </button>
@@ -108,7 +107,7 @@ function BeeRemovalScreen() {
             <div className="internal-ad">
                 <div className="image-container">
                     <div className="logo-container">
-                        <img src={AdLogo} className="ad-logo"/>
+                        <img src={AdLogo} className="ad-logo" alt={'internal-ad'}/>
                     </div>
                     <div className="vertical-line"/>
                     <div>

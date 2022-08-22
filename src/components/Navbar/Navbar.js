@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
-// import { Button } from '../Button/Button';
-import { Button } from '../Buttons';
+import { useState } from 'react';
 
 import companyLogo from '../../assets/IPP-LOGO1.png'
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom'
 import './Navbar.css';
 import Dropdown from '../Dropdown/Dropdown';
 
@@ -34,12 +32,21 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          <a href={'/home'}><img className='navbar-logo' src={companyLogo}/></a>
+          <a href={'/home'}><img className='navbar-logo' src={companyLogo} alt={"navbar"}/></a>
         </Link>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <li className='nav-item'>
+            <Link
+                to='/'
+                className='nav-links'
+                onClick={closeMobileMenu}
+            >
+              Home
+            </Link>
+          </li>
           <li
             className='nav-item'
             onMouseEnter={onMouseEnter}
@@ -73,19 +80,14 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            {/*<Link*/}
-            {/*  to='/sign-up'*/}
-            {/*  className='nav-links-mobile'*/}
-            {/*  onClick={closeMobileMenu}*/}
-            {/*>*/}
-            {/*  Account*/}
-            {/*</Link>*/}
-            <a href="https://impactpestpros.pestportals.com/landing/index" target="_blank" className="nav-links-mobile">Account</a>
-
+            <a href="https://impactpestpros.pestportals.com/landing/index" target="_blank" rel={"noreferrer"} className="nav-links-mobile">Account</a>
           </li>
         </ul>
-        {/*<Button />*/}
-        <Button onClick={() => window.open( "https://impactpestpros.pestportals.com/landing/index")} >Account</Button>
+        {/*<Button onClick={() => window.open( "https://impactpestpros.pestportals.com/landing/index")} >Account</Button>*/}
+
+        <button className={"test-button"} onClick={() => window.open("https://impactpestpros.pestportals.com/landing/index")}>
+          <p>Account</p>
+        </button>
 
       </nav>
     </>

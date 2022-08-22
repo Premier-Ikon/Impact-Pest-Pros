@@ -13,7 +13,7 @@
     width: 200px;
     height: 200px;
     border-radius: 167px;
-    box-shadow: 0px 2px 10px 1px black;
+    /*box-shadow: 0px 2px 10px 1px black;*/
 }
 
 .circle-element-white {
@@ -34,6 +34,11 @@
     color: white;
 }
 
+.image-button {
+    background-color: transparent;
+    border-color: transparent;
+}
+
 /*.mask {*/
 /*    background-color: rgba(0, 0, 0, 0.25);*/
 /*    height: 100%;*/
@@ -45,7 +50,7 @@
         width: 150px;
         height: 150px;
         border-radius: 167px;
-        /*box-shadow: 0px 2px 4px 1px grey;*/
+        /*box-shadow: 0px 1px 2px 1px grey;*/
         display: flex;
         justify-content: center;
         align-items: center;
@@ -60,7 +65,11 @@
     .circle-element-general {
         width: 150px;
         height: 150px;
-        border-radius: 167px;
-        box-shadow: 0px 2px 10px 1px black;
+        border-radius: 100px;
+        box-shadow: 0px 0px 5px 1px transparent;
+    }
+
+    .image-button {
+        display: revert;
     }
 }

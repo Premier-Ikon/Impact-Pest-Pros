@@ -1,7 +1,6 @@
 import './PestControlScreen.css'
 import React, {useState} from "react";
 import {Button} from "../../components/Buttons";
-import JoinUs from "../../icons/JOIN_US.png";
 import {Link} from "react-router-dom";
 import ServiceCard from "../../components/ServiceCards/ServiceCard";
 import AdLogo from "../../assets/AD-LOGO.png"
@@ -45,7 +44,7 @@ function PestControlScreen() {
                 <div className="mask">
                     <div className="welcome-container-service">
                         <div className="service-tab">
-                            <Link to={"/"}>
+                            <Link to={"/services"}>
                                 <button className="grey-button">
                                     <p>Home/</p>
                                 </button>
@@ -67,7 +66,7 @@ function PestControlScreen() {
                         </div>
                     </div>
                     <div className='welcome-buttons'>
-                        <Button buttonStyle={"btn--services"} path={"/services"}>Free Quote</Button>
+                        <Button buttonStyle={"btn--services"} path={"/contact-us"}>Free Quote</Button>
                     </div>
                 </div>
             </div>
@@ -100,7 +99,7 @@ function PestControlScreen() {
             <div className="internal-ad">
                 <div className="image-container">
                     <div className="logo-container">
-                        <img src={AdLogo} className="ad-logo"/>
+                        <img src={AdLogo} className="ad-logo" alt={"ad-logo"}/>
                     </div>
                     <div className="vertical-line"/>
                     <div className="lower-container">

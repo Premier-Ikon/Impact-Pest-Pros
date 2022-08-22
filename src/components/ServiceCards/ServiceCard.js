@@ -1,6 +1,5 @@
 import './ServiceCard.css'
 import React from "react";
-import {Button} from "../../components/Buttons";
 import {Link} from "react-router-dom";
 
 

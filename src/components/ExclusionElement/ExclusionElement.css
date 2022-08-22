@@ -8,11 +8,16 @@
     justify-content: center;
     align-items: center;
     background-color: white;
-    margin-top: -300px;
+    margin-top: -270px;
 
     position: absolute;
     border-color: rgb(217, 217, 217);
 
+}
+
+.root-container {
+    height: 295px;
+    background-color: transparent;
 }
 
 .exclusion-element-container {
@@ -20,11 +25,13 @@
     border-color: rgb(217, 217, 217);
     border-width: 2px;
     border-radius: 14px;
-    /*width: 320px;*/
     display: flex;
     align-items: center;
     justify-content: center;
     align-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 55px;
 }
 
 .items {

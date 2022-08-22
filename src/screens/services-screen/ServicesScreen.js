@@ -5,7 +5,6 @@ import {Button} from "../../components/Buttons";
 import RightProcessElement from "../../components/RightProcessElement/RightProcessElement";
 import LeftProcessElement from "../../components/LeftProcessElement/LeftProcessElement";
 import FaqElement from "../../components/FaqElement/FaqElement";
-import {Link} from "react-router-dom";
 
 function ServicesScreen() {
 
