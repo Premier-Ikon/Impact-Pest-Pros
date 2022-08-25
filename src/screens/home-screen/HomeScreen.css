@@ -80,6 +80,12 @@
     color: rgb(31, 49, 59, 100);
 }
 
+.general-header-white {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
 .white-header {
     font-size: 30px;
     text-align: center;
@@ -117,14 +123,30 @@
 }
 
 .benefits-container {
-    height: 375px;
+    /*height: 400px;*/
     background-color: rgb(0, 154, 220);
     border-radius: 18px;
     margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.horizontal-line {
+    height: 7px;
+    width: 40%;
+    background-color: rgb(31, 49, 59, 100);
+    display: flex;
+    justify-content: center;
+}
+
+.align-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
 }
 
 .benefits-container-mobile {
-    height: 490px;
+    height: 610px;
     background-color: rgb(0, 154, 220);
     border-radius: 18px;
     margin-top: 100px;
@@ -155,8 +177,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-left: 10%;
-    padding-top: 80px;
+    padding-top: 35px;
 }
 
 .line {
@@ -223,6 +244,7 @@
 .swiper-element-review {
     margin-top: 55px;
     height: 375px;
+
 }
 
 .service-button-style {
@@ -233,8 +255,20 @@
     border-radius: 30px;
 }
 
+.pest-control-button-style {
+    border-color: transparent;
+    height: 40px;
+    width: 200px;
+    background-color: rgb(31, 49, 59, 70%);
+    border-radius: 30px;
+}
+
 .service-button-style:hover {
     background-color: rgb(0, 154, 220, 90%);
+}
+
+.pest-control-button-style:hover {
+    background-color: rgb(31, 49, 59, 50%);
 }
 
 .service-button-text {
@@ -255,6 +289,12 @@
     justify-content: center;
 }
 
+.button-container-pest-control {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+}
+
 .review-container {
     margin-top: 100px;
     /*background-color: red;*/
@@ -271,7 +311,8 @@
 }
 
 .test-test {
-    margin-left: 7%;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -311,7 +352,9 @@
 
     .header-text-side {
         text-align: center;
+
     }
+
 }
 
 
@@ -366,7 +409,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        margin-top: 25px;
+        margin-top: 30px;
     }
 
     .exclusion-container {
@@ -389,6 +432,12 @@
         font-size: 25px;
         text-align: center;
         color: white;
+    }
+
+    .pest-control-header {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
     }
 
     .quote-button-mobile {
@@ -439,5 +488,9 @@
 
     .swiper-element-review {
         height: 470px;
+    }
+
+    .horizontal-line {
+        width: 70%;
     }
 }

@@ -14,13 +14,15 @@
 
 .review-text {
     text-align: center;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
     color: rgb(31, 49, 59, 100);
 }
 
 .lower-section-review {
-    margin-top: 15px;
+    position: absolute;
+    top: 290px;
+    left: 340px
 }
 
 .text-container {
@@ -54,5 +56,10 @@
     .review-element-container {
         width: revert;
         height: 470px;
+    }
+
+    .lower-section-review {
+        position: revert;
+
     }
 }
