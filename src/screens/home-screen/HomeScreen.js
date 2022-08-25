@@ -7,16 +7,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { Bar } from 'react-chartjs-2'
 
 import {Button} from '../../components/Buttons'
 import {ImageElements} from "../../components/ImageElements/ImageElements";
 import {ExclusionElement} from "../../components/ExclusionElement/ExclusionElement";
 import {CustomerReview} from "../../components/CustomerReview/CustomerReview"
-import ResidentialImage from '../../assets/RESIDENTIAL-IMAGE.png'
-import CommercialImage from '../../assets/COMMERCIAL-IMAGE.png'
-import EcoFriendlyImage from '../../assets/ECO-FRIENDLY-IMAGE.png'
-import SolutionsImage from '../../assets/SOLUTIONS-IMAGE.png'
 import CustomerSupport from '../../assets/CUSTOMER-SUPPORT.png'
 import PaymentProcess from '../../assets/PAYMENT-PROCESS.png'
 import Scheduling from '../../assets/SCHEDULING.png'
@@ -25,7 +20,6 @@ import BeesImage from '../../assets/BEE-ICON.png'
 import BirdImage from '../../assets/BIRD-ICON.png'
 import SpiderImage from '../../assets/SPIDER-ICON.png'
 import RodentImage from '../../assets/RODENT-ICON.png'
-import JoinUs from "../../icons/JOIN_US.png";
 import {Link} from "react-router-dom";
 import AdLogo from "../../assets/AD-LOGO.png";
 

@@ -3,7 +3,6 @@ import React, {useState} from "react";
 import {Link} from "react-router-dom";
 import {Button} from "../../components/Buttons";
 import ServiceCard from "../../components/ServiceCards/ServiceCard";
-import {IconElement} from "../../components/IconElement/IconElement";
 import AdLogo from "../../assets/AD-LOGO.png";
 import FaqElement from "../../components/FaqElement/FaqElement";
 import {Swiper, SwiperSlide} from "swiper/react";

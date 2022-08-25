@@ -4,7 +4,6 @@ import {Button} from "../../components/Buttons";
 import {Link} from "react-router-dom";
 import ServiceCard from "../../components/ServiceCards/ServiceCard";
 import AdLogo from "../../assets/AD-LOGO.png"
-import {IconElement} from "../../components/IconElement/IconElement";
 import FaqElement from "../../components/FaqElement/FaqElement";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {A11y, Navigation, Pagination, Scrollbar} from "swiper";

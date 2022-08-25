@@ -5,7 +5,6 @@ import {Button} from "../../components/Buttons";
 import ServiceCard from "../../components/ServiceCards/ServiceCard";
 import AdLogo from "../../assets/AD-LOGO.png";
 import FaqElement from "../../components/FaqElement/FaqElement";
-import {IconElement} from "../../components/IconElement/IconElement";
 import {A11y, Navigation, Pagination, Scrollbar} from "swiper";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {ExclusionElement} from "../../components/ExclusionElement/ExclusionElement";

@@ -1,6 +1,5 @@
 import './ImageElements.css'
 import React from "react";
-import JoinUs from "../../icons/JOIN_US.png";
 import {Link} from "react-router-dom";
 
 
