@@ -137,6 +137,7 @@
     background-color: rgb(31, 49, 59, 100);
     display: flex;
     justify-content: center;
+    border-radius: 2px;
 }
 
 .align-center {

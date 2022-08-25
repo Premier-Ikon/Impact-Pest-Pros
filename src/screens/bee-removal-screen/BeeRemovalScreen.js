@@ -120,11 +120,11 @@ function BeeRemovalScreen() {
                     <h2>How Bee Removal Works</h2>
                 </div>
                 <div className="rodent-control-elements">
-                    <IconElement icon={"fa-solid fa-magnifying-glass"} description={"Initial inspection"}
+                    <ExclusionElement icon={"fa-solid fa-magnifying-glass"} description={"Initial inspection"}
                                  quote={"Your Impact Pest Pros professional will conduct a thorough inspection to determine where and how rodents are entering your home. "}/>
-                    <IconElement icon={"fa-solid fa-xmark"} description={"Removal"}
+                    <ExclusionElement icon={"fa-solid fa-xmark"} description={"Removal"}
                                  quote={"First, we will remove any bees from your home. Then, we will seal up affected areas to keep them from re-entering your home. "}/>
-                    <IconElement icon={"fa-solid fa-hand"} description={"Prevention"}
+                    <ExclusionElement icon={"fa-solid fa-hand"} description={"Prevention"}
                                  quote={"We will seal up the affected areas, in order to prevent bees from re-entering. Will also remove any hives at additional cost."}/>
                 </div>
             </div>

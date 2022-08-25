@@ -98,11 +98,11 @@ function RodentControlScreen() {
                     <h2>How Rodent Control Works</h2>
                 </div>
                 <div className="rodent-control-elements">
-                    <IconElement icon={"fa-solid fa-magnifying-glass"} description={"Rodent Inspection"}
+                    <ExclusionElement icon={"fa-solid fa-magnifying-glass"} description={"Rodent Inspection"}
                                  quote={"Your Impact Pest Pros professional will conduct a thorough inspection to determine where and how rodents are entering your home. "}/>
-                    <IconElement icon={"fa-solid fa-user-shield"} description={"Exclusion"}
+                    <ExclusionElement icon={"fa-solid fa-user-shield"} description={"Exclusion"}
                                  quote={"First, we will remove any rodents from your home. Then, we will seal up entry points to keep them from re-entering your home. "}/>
-                    <IconElement icon={"fa-solid fa-house-chimney"} description={"Annual Inspection"}
+                    <ExclusionElement icon={"fa-solid fa-house-chimney"} description={"Annual Inspection"}
                                  quote={"We will conduct an annual inspection each year for as long as you keep your plan. We will inspect previous entry points, as well as new vulnerabilities. "}/>
                 </div>
             </div>
