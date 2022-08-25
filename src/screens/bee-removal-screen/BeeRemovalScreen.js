@@ -6,6 +6,9 @@ import ServiceCard from "../../components/ServiceCards/ServiceCard";
 import AdLogo from "../../assets/AD-LOGO.png";
 import FaqElement from "../../components/FaqElement/FaqElement";
 import {IconElement} from "../../components/IconElement/IconElement";
+import {A11y, Navigation, Pagination, Scrollbar} from "swiper";
+import {Swiper, SwiperSlide} from "swiper/react";
+import {ExclusionElement} from "../../components/ExclusionElement/ExclusionElement";
 
 
 function BeeRemovalScreen() {
@@ -42,18 +45,6 @@ function BeeRemovalScreen() {
         <div className="bird-control">
             <div className="background-image-bird">
                 <div className="welcome-container-service">
-                    <div className="service-tab">
-                        <Link to={"/services"}>
-                            <button className="grey-button">
-                                <p>Home/</p>
-                            </button>
-                        </Link>
-                        <Link to={"/pest-control"}>
-                            <button className="current-button">
-                                <p>Bee Removal</p>
-                            </button>
-                        </Link>
-                    </div>
                     <div className="center-container">
                         <div className="welcome-header">
                             <h1>Bee Removal</h1>
@@ -94,7 +85,7 @@ function BeeRemovalScreen() {
                 </div>
             </div>
             <div className="service-ad-header-mobile">
-                <div className="general-header">
+                <div className="general-header-mobile">
                     <h2>Get Started With Bee Removal</h2>
                 </div>
                 <div className="mobile-container">
@@ -141,18 +132,30 @@ function BeeRemovalScreen() {
                 <div className="general-header-mobile">
                     <h2>How Bee Removal Works</h2>
                 </div>
-                <div className="rodent-control-elements">
-                    <IconElement icon={"fa-solid fa-magnifying-glass"} description={"Initial inspection"}
-                                 quote={"Your Impact Pest Pros professional will conduct a thorough inspection to determine where and how rodents are entering your home. "}/>
-                </div>
-                <div className="rodent-control-elements">
-                    <IconElement icon={"fa-solid fa-xmark"} description={"Removal"}
-                                 quote={"First, we will remove any bees from your home. Then, we will seal up affected areas to keep them from re-entering your home. "}/>
-                </div>
-                <div className="rodent-control-elements">
-                    <IconElement icon={"fa-solid fa-hand"} description={"Prevention"}
-                                 quote={"We will seal up the affected areas, in order to prevent bees from re-entering. Will also remove any hives at additional cost."}/>
-                </div>
+                <Swiper
+                    // install Swiper modules
+                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                    spaceBetween={100}
+                    slidesPerView={1}
+                    navigation
+                    pagination={{ clickable: true }}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    onSlideChange={() => console.log('slide change')}
+                    className={"swiper-element"}
+                >
+                    <SwiperSlide>
+                        <ExclusionElement icon={"fa-solid fa-magnifying-glass"} description={"Initial inspection"}
+                                     quote={"Your Impact Pest Pros professional will conduct a thorough inspection to determine where and how rodents are entering your home. "}/>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <ExclusionElement icon={"fa-solid fa-xmark"} description={"Removal"}
+                                     quote={"First, we will remove any bees from your home. Then, we will seal up affected areas to keep them from re-entering your home. "}/>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <ExclusionElement icon={"fa-solid fa-hand"} description={"Prevention"}
+                                     quote={"We will seal up the affected areas, in order to prevent bees from re-entering. Will also remove any hives at additional cost."}/>
+                    </SwiperSlide>
+                </Swiper>
             </div>
 
             <div className="faq-section">

@@ -6,6 +6,9 @@ import ServiceCard from "../../components/ServiceCards/ServiceCard";
 import {IconElement} from "../../components/IconElement/IconElement";
 import AdLogo from "../../assets/AD-LOGO.png";
 import FaqElement from "../../components/FaqElement/FaqElement";
+import {Swiper, SwiperSlide} from "swiper/react";
+import {A11y, Navigation, Pagination, Scrollbar} from "swiper";
+import {ExclusionElement} from "../../components/ExclusionElement/ExclusionElement";
 
 
 function RodentControlScreen() {
@@ -43,18 +46,6 @@ function RodentControlScreen() {
             <div className="background-image-rodent">
                 <div className="mask">
                     <div className="welcome-container-service">
-                        <div className="service-tab">
-                            <Link to={"/services"}>
-                                <button className="grey-button">
-                                    <p>Home/</p>
-                                </button>
-                            </Link>
-                            <Link to={"/pest-control"}>
-                                <button className="current-button">
-                                    <p>Rodent Control</p>
-                                </button>
-                            </Link>
-                        </div>
                         <div className="welcome-header">
                             <h1>Rodent Control</h1>
                         </div>
@@ -77,17 +68,31 @@ function RodentControlScreen() {
                 </div>
             </div>
             <div className="service-ad-header-mobile">
-                <div className="general-header">
-                    <h2>Get Started With Rodent Control</h2>
-                </div>
-                <div className="mobile-container">
-                    <div className="card-container-mobile">
-                        <ServiceCard name={"Bi-Monthly Rodent Control"} description1={"Initial interior and exterior inspection and treatment discover any vulnerabilities and identify them"} description2={"Ongoing exterior treatments scheduled bi-monthly"} description3={"Protection that is guaranteed for as long as you keep your plan."} image={"bi-monthly-rodent"}/>
-                        <div className="space"/>
-                        <ServiceCard name={"One-Time Rodent Control"} description1={"One single pest control service includes a comprehensive interior and exterior inspection and treatment"} description2={"If pests come back within 30 days we will come back at no additional cost"} description3={"Perfect service before selling your home"} image={"one-time-rodent"}/>
+                <div className="rodent-control-container-mobile">
+                    <div className="general-header-mobile">
+                        <h2>Get Started With Rodent Control</h2>
                     </div>
+                    <Swiper
+                        // install Swiper modules
+                        modules={[Navigation, Pagination, Scrollbar, A11y]}
+                        spaceBetween={100}
+                        slidesPerView={1}
+                        navigation
+                        pagination={{ clickable: true }}
+                        onSwiper={(swiper) => console.log(swiper)}
+                        onSlideChange={() => console.log('slide change')}
+                        className={"swiper-element-services"}
+                    >
+                        <SwiperSlide className="test-test">
+                            <ServiceCard name={"Bi-Monthly Rodent Control"} description1={"Initial interior and exterior inspection and treatment discover any vulnerabilities and identify them"} description2={"Ongoing exterior treatments scheduled bi-monthly"} description3={"Protection that is guaranteed for as long as you keep your plan."} image={"bi-monthly-rodent"}/>
+                        </SwiperSlide>
+                        <SwiperSlide className="test-test">
+                            <ServiceCard name={"One-Time Rodent Control"} description1={"One single pest control service includes a comprehensive interior and exterior inspection and treatment"} description2={"If pests come back within 30 days we will come back at no additional cost"} description3={"Perfect service before selling your home"} image={"one-time-rodent"}/>
+                        </SwiperSlide>
+                    </Swiper>
                 </div>
             </div>
+
             <div className="rodent-control-container">
                 <div className="general-header">
                     <h2>How Rodent Control Works</h2>
@@ -98,24 +103,43 @@ function RodentControlScreen() {
                     <IconElement icon={"fa-solid fa-user-shield"} description={"Exclusion"}
                                  quote={"First, we will remove any rodents from your home. Then, we will seal up entry points to keep them from re-entering your home. "}/>
                     <IconElement icon={"fa-solid fa-house-chimney"} description={"Annual Inspection"}
-                                 quote={"We will conduct an annual inspection each year for as long as you keep your plan. We will inspect previous entry points, as well as new vulnerabilities "}/>
+                                 quote={"We will conduct an annual inspection each year for as long as you keep your plan. We will inspect previous entry points, as well as new vulnerabilities. "}/>
                 </div>
             </div>
             <div className="monthly-service-container-mobile">
                 <div className="general-header-mobile">
                     <h2>How Rodent Control Works</h2>
                 </div>
-                <div className="rodent-control-elements">
-                    <IconElement icon={"fa-solid fa-magnifying-glass"} description={"Rodent Inspection"}
-                                 quote={"Your Impact Pest Pros professional will conduct a thorough inspection to determine where and how rodents are entering your home. "}/>
-                </div>
-                <div className="rodent-control-elements">
-                    <IconElement icon={"fa-solid fa-user-shield"} description={"Exclusion"}
-                                 quote={"First, we will remove any rodents from your home. Then, we will seal up entry points to keep them from re-entering your home. "}/>
-                </div>
-                <div className="rodent-control-elements">
-                    <IconElement icon={"fa-solid fa-house-chimney"} description={"Annual Inspection"}
-                                 quote={"We will conduct an annual inspection each year for as long as you keep your plan. We will inspect previous entry points, as well as new vulnerabilities "}/>
+                <Swiper
+                    // install Swiper modules
+                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                    spaceBetween={100}
+                    slidesPerView={1}
+                    navigation
+                    pagination={{ clickable: true }}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    onSlideChange={() => console.log('slide change')}
+                    className={"swiper-element"}
+                >
+                    <SwiperSlide>
+                        <ExclusionElement icon={"fa-solid fa-magnifying-glass"} description={"Rodent Inspection"}
+                                          quote={"Your Impact Pest Pros professional will conduct a thorough inspection to determine where and how rodents are entering your home. "}/>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <ExclusionElement icon={"fa-solid fa-user-shield"} description={"Exclusion"}
+                                          quote={"First, we will remove any rodents from your home. Then, we will seal up entry points to keep them from re-entering your home. "}/>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <ExclusionElement icon={"fa-solid fa-house-chimney"} description={"Annual Inspection"}
+                                          quote={"We will conduct an annual inspection each year for as long as you keep your plan. We will inspect previous entry points, as well as new vulnerabilities."}/>
+                    </SwiperSlide>
+                </Swiper>
+                <div className={'button-container-service'}>
+                    <Link to={"/contact-us"}>
+                        <button className={'service-button-style'}>
+                            <p className="service-button-text">Get Started Today</p>
+                        </button>
+                    </Link>
                 </div>
             </div>
 

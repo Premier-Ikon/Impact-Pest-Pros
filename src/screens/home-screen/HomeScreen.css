@@ -241,6 +241,11 @@
     height: 330px;
 }
 
+.swiper-element-tall {
+    margin-top: 20px;
+    height: 350px;
+}
+
 .swiper-element-review {
     margin-top: 55px;
     height: 375px;
@@ -492,5 +497,9 @@
 
     .horizontal-line {
         width: 70%;
+    }
+
+    .button-container-service {
+        margin-top: 30px;
     }
 }

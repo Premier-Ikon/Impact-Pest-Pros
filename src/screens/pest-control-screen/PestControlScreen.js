@@ -6,6 +6,9 @@ import ServiceCard from "../../components/ServiceCards/ServiceCard";
 import AdLogo from "../../assets/AD-LOGO.png"
 import {IconElement} from "../../components/IconElement/IconElement";
 import FaqElement from "../../components/FaqElement/FaqElement";
+import {Swiper, SwiperSlide} from "swiper/react";
+import {A11y, Navigation, Pagination, Scrollbar} from "swiper";
+import {ExclusionElement} from "../../components/ExclusionElement/ExclusionElement";
 
 
 function PestControlScreen() {
@@ -43,18 +46,6 @@ function PestControlScreen() {
             <div className="background-image-pest">
                 <div className="mask">
                     <div className="welcome-container-service">
-                        <div className="service-tab">
-                            <Link to={"/services"}>
-                                <button className="grey-button">
-                                    <p>Home/</p>
-                                </button>
-                            </Link>
-                            <Link to={"/pest-control"}>
-                                <button className="current-button">
-                                    <p>Pest Control</p>
-                                </button>
-                            </Link>
-                        </div>
                         <div className="welcome-header">
                             <h1>Pest Control</h1>
                         </div>
@@ -81,19 +72,45 @@ function PestControlScreen() {
                     <ServiceCard name={"One-time Pest Control"} description1={"One single pest control service includes a comprehensive interior and exterior inspection and treatment"} description2={"If pests come back within 30 days we will come back at no additional cost"} description3={"Perfect service before selling your home"} image={"one-time-pest"}/>
                 </div>
             </div>
-            <div className="service-ad-header-mobile">
-                <div className="general-header">
+            {/*<div className="service-ad-header-mobile">*/}
+            {/*    <div className="general-header">*/}
+            {/*        <h2>Get Started With Pest Control</h2>*/}
+            {/*    </div>*/}
+            {/*    <div className="mobile-container">*/}
+            {/*        <div className="card-container-mobile">*/}
+            {/*            <ServiceCard name={"Monthly Pest Control"} description1={"Initial interior and exterior inspection and treatment"} description2={"Ongoing exterior treatments scheduled monthly"} description3={"Guaranteed protection for as long as you keep your plan, if pests come back during treatments so will we"} image={"monthly-pest"}/>*/}
+            {/*            <div className="space"/>*/}
+            {/*            <ServiceCard name={"Bi-Monthly Pest Control"} description1={"Initial interior and exterior inspection and treatment discover any vulnerabilities and identify them"} description2={"Ongoing exterior treatments scheduled bi-monthly"} description3={"Protection that is guaranteed for as long as you keep your plan"} image={"bi-monthly-pest"}/>*/}
+            {/*            <div className="space"/>*/}
+            {/*            <ServiceCard name={"One-time Pest Control"} description1={"One single pest control service includes a comprehensive interior and exterior inspection and treatment"} description2={"If pests come back within 30 days we will come back at no additional cost"} description3={"Perfect service before selling your home"} image={"one-time-pest"}/>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
+            <div className="rodent-control-container-mobile">
+                <div className="general-header-mobile">
                     <h2>Get Started With Pest Control</h2>
                 </div>
-                <div className="mobile-container">
-                    <div className="card-container-mobile">
+                <Swiper
+                    // install Swiper modules
+                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                    spaceBetween={100}
+                    slidesPerView={1}
+                    navigation
+                    pagination={{ clickable: true }}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    onSlideChange={() => console.log('slide change')}
+                    className={"swiper-element-services"}
+                >
+                    <SwiperSlide className="test-test">
                         <ServiceCard name={"Monthly Pest Control"} description1={"Initial interior and exterior inspection and treatment"} description2={"Ongoing exterior treatments scheduled monthly"} description3={"Guaranteed protection for as long as you keep your plan, if pests come back during treatments so will we"} image={"monthly-pest"}/>
-                        <div className="space"/>
+                    </SwiperSlide>
+                    <SwiperSlide className="test-test">
                         <ServiceCard name={"Bi-Monthly Pest Control"} description1={"Initial interior and exterior inspection and treatment discover any vulnerabilities and identify them"} description2={"Ongoing exterior treatments scheduled bi-monthly"} description3={"Protection that is guaranteed for as long as you keep your plan"} image={"bi-monthly-pest"}/>
-                        <div className="space"/>
+                    </SwiperSlide>
+                    <SwiperSlide className="test-test">
                         <ServiceCard name={"One-time Pest Control"} description1={"One single pest control service includes a comprehensive interior and exterior inspection and treatment"} description2={"If pests come back within 30 days we will come back at no additional cost"} description3={"Perfect service before selling your home"} image={"one-time-pest"}/>
-                    </div>
-                </div>
+                    </SwiperSlide>
+                </Swiper>
             </div>
 
             <div className="internal-ad">
@@ -104,7 +121,7 @@ function PestControlScreen() {
                     <div className="vertical-line"/>
                     <div className="lower-container">
                         <div className="service-ad-text">
-                            <p className="test">Insects are swarming nationwide and your home needs protection. Luckily, our pest protection plans start as low as $69/mo. Click below to get your FREE quote and ensure your home is protected from pests in order to make your home happy and clean.</p>
+                            <p className="test">Insects are swarming nationwide and your home needs protection. Luckily, our pest protection plans start as low as $23/mo. Click below to get your FREE quote and ensure your home is protected from pests in order to make your home happy and clean.</p>
                         </div>
                         <div className="internal-ad-button">
                             <Link to={"/contact-us"}>
@@ -119,34 +136,60 @@ function PestControlScreen() {
 
 
 
-            <div className="monthly-service-container">
+            <div className="rodent-control-container">
                 <div className="general-header">
                     <h2>How Monthly Pest Control Works</h2>
                 </div>
-                <div className="rodent-control-elements">
-                    <IconElement icon={"fa-solid fa-magnifying-glass"} description={"Initial Service Visit"}
-                                 quote={"Your Impact Pest Pros professional will conduct a thorough inspection to determine where and how rodents are entering your home"}/>
-                    <IconElement icon={"fa-solid fa-user-shield"} description={"Year-Round Control"}
-                                 quote={"We’ll come out to inspect and service your home with regularly scheduled treatments to reinforce your exterior barrier. This will continue as long as you keep your plan"}/>
-                    <IconElement icon={"fa-solid fa-house-chimney"} description={"Guaranteed Satisfaction"}
-                                 quote={"If pests come back between treatments, so will we – at no additional cost to you. That is the Impact Pest Guarantee"}/>
+                <div className="pest-control-elements">
+                    <ExclusionElement icon={"fa-solid fa-magnifying-glass"} description={"Initial Inspection"}
+                                      quote={"Your Impact Pest Pros professional will conduct a thorough inspection to determine where and how your home is being impacted. "}/>
+                    <ExclusionElement icon={"fa-solid fa-calendar-check"} description={"Service Plan"}
+                                      quote={"We offer a monthly, bi-monthly, and quarterly service when it comes to pest control. Choose the plan that best fits your needs."}/>
+                    <ExclusionElement icon={"fa-solid fa-house-chimney"} description={"Pest Free Home"}
+                                      quote={"Once you choose the service plan that best fits your needs, our technicians will service you home and be sure to leave and impact."}/>
+                </div>
+                <div className={'button-container-services'}>
+                    <Link to={"/contact-us"}>
+                        <button className={'service-button-style'}>
+                            <p className="service-button-text">Get Started Today</p>
+                        </button>
+                    </Link>
                 </div>
             </div>
             <div className="monthly-service-container-mobile">
                 <div className="general-header-mobile">
                     <h2>How Monthly Pest Control Works</h2>
                 </div>
-                <div className="rodent-control-elements">
-                    <IconElement icon={"fa-solid fa-magnifying-glass"} description={"Initial Service Visit"}
-                                 quote={"Your Impact Pest Pros professional will conduct a thorough inspection to determine where and how rodents are entering your home"}/>
-                </div>
-                <div className="rodent-control-elements">
-                    <IconElement icon={"fa-solid fa-user-shield"} description={"Year-Round Control"}
-                                 quote={"We’ll come out to inspect and service your home with regularly scheduled treatments to reinforce your exterior barrier. This will continue as long as you keep your plan"}/>
-                </div>
-                <div className="rodent-control-elements">
-                    <IconElement icon={"fa-solid fa-house-chimney"} description={"Protection & Control"}
-                                 quote={"If pests come back between treatments, so will we – at no additional cost to you. That is the Impact Pest Guarantee"}/>
+                <Swiper
+                    // install Swiper modules
+                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                    spaceBetween={100}
+                    slidesPerView={1}
+                    navigation
+                    pagination={{ clickable: true }}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    onSlideChange={() => console.log('slide change')}
+                    className={"swiper-element"}
+                >
+                    <SwiperSlide>
+                        <ExclusionElement icon={"fa-solid fa-magnifying-glass"} description={"Initial Inspection"}
+                                          quote={"Your Impact Pest Pros professional will conduct a thorough inspection to determine where and how your home is being impacted. "}/>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <ExclusionElement icon={"fa-solid fa-calendar-check"} description={"Service Plan"}
+                                          quote={"We offer a monthly, bi-monthly, and quarterly service when it comes to pest control. Choose the plan that best fits your needs."}/>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <ExclusionElement icon={"fa-solid fa-house-chimney"} description={"Pest Free Home"}
+                                          quote={"Once you choose the service plan that best fits your needs, our technicians will service you home and be sure to leave and impact."}/>
+                    </SwiperSlide>
+                </Swiper>
+                <div className={'button-container-service'}>
+                    <Link to={"/contact-us"}>
+                        <button className={'service-button-style'}>
+                            <p className="service-button-text">Get Started Today</p>
+                        </button>
+                    </Link>
                 </div>
             </div>
 

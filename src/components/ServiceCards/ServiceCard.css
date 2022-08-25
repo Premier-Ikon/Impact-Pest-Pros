@@ -120,14 +120,13 @@
 
 @media screen and (max-width: 960px) {
     .card-button {
-        /*display: revert;*/
+        display: revert;
     }
 
     .button-container {
-        top: 100px;
-        bottom: 0px;
-        margin-left: 0px;
-        /*display: revert;*/
+        position: revert;
+        padding-top: 20px;
     }
+
 
 }
