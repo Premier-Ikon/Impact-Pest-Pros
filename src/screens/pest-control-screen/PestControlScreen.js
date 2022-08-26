@@ -43,7 +43,7 @@ function PestControlScreen() {
     return(
         <div className="pest-control">
             <div className="background-image-pest">
-                <div className="mask">
+                {/*<div className="mask">*/}
                     <div className="welcome-container-service">
                         <div className="welcome-header">
                             <h1>Pest Control</h1>
@@ -56,9 +56,9 @@ function PestControlScreen() {
                         </div>
                     </div>
                     <div className='welcome-buttons'>
-                        <Button buttonStyle={"btn--services"} path={"/contact-us"}>Free Quote</Button>
+                        <Button buttonStyle={"btn--services-grey"} path={"/contact-us"}>Free Quote</Button>
                     </div>
-                </div>
+                {/*</div>*/}
             </div>
 
             <div className="service-ad-header">

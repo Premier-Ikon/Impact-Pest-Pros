@@ -58,24 +58,24 @@ function BirdControlScreen() {
                     <div className='welcome-buttons-bird'>
                         <Button buttonStyle={"btn--services-grey"} path={"/contact-us"}>Free Quote</Button>
                     </div>
-                    <div className="bird-container">
-                        <div className="left-bird-container">
-                            <div className="top-left-bird">
-                                <i className="fa-solid fa-dove"></i>
-                            </div>
-                            <div className="bottom-left-bird">
-                                <i className="fa-solid fa-dove"></i>
-                            </div>
-                        </div>
-                        <div className="right-bird-container">
-                            <div className="top-left-bird">
-                                <i className="fa-solid fa-dove"></i>
-                            </div>
-                            <div className="bottom-left-bird">
-                                <i className="fa-solid fa-dove"></i>
-                            </div>
-                        </div>
-                    </div>
+                    {/*<div className="bird-container">*/}
+                    {/*    <div className="left-bird-container">*/}
+                    {/*        <div className="top-left-bird">*/}
+                    {/*            <i className="fa-solid fa-dove"></i>*/}
+                    {/*        </div>*/}
+                    {/*        <div className="bottom-left-bird">*/}
+                    {/*            <i className="fa-solid fa-dove"></i>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*    <div className="right-bird-container">*/}
+                    {/*        <div className="top-left-bird">*/}
+                    {/*            <i className="fa-solid fa-dove"></i>*/}
+                    {/*        </div>*/}
+                    {/*        <div className="bottom-left-bird">*/}
+                    {/*            <i className="fa-solid fa-dove"></i>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                 </div>
             </div>
             <div className="service-ad-header">

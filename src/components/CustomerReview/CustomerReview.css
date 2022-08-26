@@ -19,11 +19,7 @@
     color: rgb(31, 49, 59, 100);
 }
 
-.lower-section-review {
-    position: absolute;
-    top: 290px;
-    left: 340px
-}
+
 
 .text-container {
     display: flex;

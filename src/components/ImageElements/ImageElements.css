@@ -1,5 +1,5 @@
 .circle-container {
-    /*background-color: white;*/
+    background-color: white;
     width: 200px;
     height: 200px;
     border-radius: 167px;
@@ -30,7 +30,7 @@
 .element-text-white {
     text-align: center;
     font-size: 20px;
-    margin-top: 5px;
+    margin-top: 10px;
     color: white;
 }
 

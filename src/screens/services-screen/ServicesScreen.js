@@ -5,6 +5,15 @@ import {Button} from "../../components/Buttons";
 import RightProcessElement from "../../components/RightProcessElement/RightProcessElement";
 import LeftProcessElement from "../../components/LeftProcessElement/LeftProcessElement";
 import FaqElement from "../../components/FaqElement/FaqElement";
+import {A11y, Navigation, Pagination, Scrollbar} from "swiper";
+import {Swiper, SwiperSlide} from "swiper/react";
+import {CustomerReview} from "../../components/CustomerReview/CustomerReview";
+import {ImageElements} from "../../components/ImageElements/ImageElements";
+import SpiderImage from "../../assets/SPIDER-ICON.png";
+import BirdImage from "../../assets/BIRD-ICON.png";
+import RodentImage from "../../assets/RODENT-ICON.png";
+import BeesImage from "../../assets/BEE-ICON.png";
+import {Link} from "react-router-dom";
 
 function ServicesScreen() {
 
@@ -44,56 +53,68 @@ function ServicesScreen() {
     }
 
     return(
-      <div>
+      <div className="service-body">
         <div className="service-background-image">
-            <div className="service-background-mask">
-                <div className="service-welcome-container">
-                    <div className="welcome-header">
-                        <h1>Impact Pest Pros</h1>
-                    </div>
-                    <div className="welcome-body">
-                        <h3>Pest Services</h3>
-                    </div>
-                </div>
-                <div className="service-button-container">
-                    <div className='service-welcome-buttons'>
-                        <Button buttonStyle={"btn--service"} path={"/pest-control"}>Pest Control</Button>
-                        <Button buttonStyle={"btn--service"} path={"/bird-control"}>Bird Control</Button>
-                    </div>
-                    <div className='service-welcome-buttons'>
-                        <Button buttonStyle={"btn--service"} path={"/rodent-control"}>Rodent Control</Button>
-                        <Button buttonStyle={"btn--service"} path={"/bee-removal"}>Bee Removal</Button>
-                    </div>
-                    <div className='service-bottom-buttons'>
-                        <Button buttonStyle={"btn--grey"} path={"/contact-us"}>Get Started</Button>
-                    </div>
-                </div>
+            <div className="general-header">
+                <h3 className="black-header">All Services</h3>
             </div>
+            <Swiper
+                // install Swiper modules
+                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                spaceBetween={10}
+                slidesPerView={3}
+                navigation
+                pagination={{ clickable: true }}
+                onSwiper={(swiper) => console.log(swiper)}
+                onSlideChange={() => console.log('slide change')}
+                className={"swiper-element-service"}
+            >
+                <div className="test-test">
+                    <SwiperSlide className="test-test">
+                        <ImageElements image={SpiderImage} description={"Pest Control"} style={"general"} link={'pest-control'}/>
+                    </SwiperSlide>
+                    <SwiperSlide className="test-test">
+                        <ImageElements image={BirdImage} description={"Bird Control"} style={"general"} link={'bird-control'}/>
+                    </SwiperSlide>
+                    <SwiperSlide className="test-test">
+                        <ImageElements image={RodentImage} description={"Rodent Control"} style={"general"} link={'rodent-control'}/>
+                    </SwiperSlide>
+                    <SwiperSlide className="test-test">
+                        <ImageElements image={BeesImage} description={"Bee Removal"} style={"general"} link={'bee-removal'}/>
+                    </SwiperSlide>
+                </div>
+            </Swiper>
         </div>
           <div className="service-background-image-mobile">
-              <div className="service-background-mask">
-                  <div className="service-welcome-container">
-                      <div className="welcome-header">
-                          <h1>Impact Pest Pros</h1>
-                      </div>
-                      <div className="welcome-body">
-                          <h3>Pest Control</h3>
-                      </div>
-                  </div>
-                  <div className="service-button-container">
-                      <div className='service-welcome-buttons'>
-                          <Button buttonStyle={"btn--service"} path={"/pest-control"}>Pest Control</Button>
-                          <Button buttonStyle={"btn--service"} path={"/bird-control"}>Bird Control</Button>
-                      </div>
-                      <div className='service-welcome-buttons'>
-                          <Button buttonStyle={"btn--service"} path={"/rodent-control"}>Rodent Control</Button>
-                          <Button buttonStyle={"btn--service"} path={"/bee-removal"}>Bee Removal</Button>
-                      </div>
-                      <div className='service-bottom-buttons'>
-                          <Button buttonStyle={"btn--grey"} path={"/contact-us"}>Get Started</Button>
-                      </div>
-                  </div>
+              <div className="general-header">
+                  <h3 className="black-header">All Services</h3>
               </div>
+              <Swiper
+                  // install Swiper modules
+                  modules={[Navigation, Pagination, Scrollbar, A11y]}
+                  spaceBetween={10}
+                  slidesPerView={1}
+                  navigation
+                  pagination={{ clickable: true }}
+                  onSwiper={(swiper) => console.log(swiper)}
+                  onSlideChange={() => console.log('slide change')}
+                  className={"swiper-element-service"}
+              >
+                  <div className="test-test">
+                      <SwiperSlide className="test-test">
+                          <ImageElements image={SpiderImage} description={"Pest Control"} style={"general"} link={'pest-control'}/>
+                      </SwiperSlide>
+                      <SwiperSlide className="test-test">
+                          <ImageElements image={BirdImage} description={"Bird Control"} style={"general"} link={'bird-control'}/>
+                      </SwiperSlide>
+                      <SwiperSlide className="test-test">
+                          <ImageElements image={RodentImage} description={"Rodent Control"} style={"general"} link={'rodent-control'}/>
+                      </SwiperSlide>
+                      <SwiperSlide className="test-test">
+                          <ImageElements image={BeesImage} description={"Bee Removal"} style={"general"} link={'bee-removal'}/>
+                      </SwiperSlide>
+                  </div>
+              </Swiper>
           </div>
 
           <div className="offerings-container">
@@ -105,6 +126,46 @@ function ServicesScreen() {
                   <LeftProcessElement icon={"fa-regular fa-magnifying-glass"} name={"Inspection"} secondName={"Inspections done right"} description={"Our experts are trained in your local pest populations to identify your infestation, spot existing and potential issues and deliver the best, most comprehensive treatments that start working immediately."} image={"inspection"}/>
                   <RightProcessElement icon={"fa-regular fa-clipboard-list"} name={"Advice"} secondName={"Customized treatment plans"} description={"We’ll explain your pest problem in plain language and work with you to develop your own customized solution to nix your pests and keep them from coming back, 365 days a year."} image={"advice"}/>
                   <LeftProcessElement icon={"fa-regular fa-handshake"} name={"Partner"} secondName={"Your pest-free partners"} description={"Once we start treatment, you can relax. We guarantee we’ll nix your pests and keep them from coming back. Or we'll come back between treatments at no additional cost to you."} image={"partner"}/>
+              </div>
+          </div>
+          <div className="offerings-container-mobile">
+              <div className="general-header">
+                  <h2>A Process You</h2>
+                  <h2>Can Trust</h2>
+
+              </div>
+              <Swiper
+                  // install Swiper modules
+                  modules={[Navigation, Pagination, Scrollbar, A11y]}
+                  spaceBetween={10}
+                  slidesPerView={1}
+                  navigation
+                  pagination={{ clickable: true }}
+                  onSwiper={(swiper) => console.log(swiper)}
+                  onSlideChange={() => console.log('slide change')}
+                  className={"swiper-element-process"}
+              >
+                  <div className="test-test">
+                      <SwiperSlide className="test-test">
+                          <RightProcessElement icon={"fa-regular fa-user"} name={"Service"} secondName={"Service on your time"} description={"With online scheduling and account management, 24/7 customer support and on-our-way text alerts, we work around your schedule, not the other way around."} image={"service"}/>
+                      </SwiperSlide>
+                      <SwiperSlide className="test-test">
+                          <RightProcessElement icon={"fa-regular fa-magnifying-glass"} name={"Inspection"} secondName={"Inspections done right"} description={"Our experts are trained in your local pest populations to identify your infestation, spot existing and potential issues and deliver the best treatments that start working immediately."} image={"inspection"}/>
+                      </SwiperSlide>
+                      <SwiperSlide className="test-test">
+                          <RightProcessElement icon={"fa-regular fa-clipboard-list"} name={"Advice"} secondName={"Customized treatment plans"} description={"We’ll explain your pest problem in plain language and work with you to develop your own customized solution to nix your pests and keep them from coming back, 365 days a year."} image={"advice"}/>
+                      </SwiperSlide>
+                      <SwiperSlide className="test-test">
+                          <RightProcessElement icon={"fa-regular fa-handshake"} name={"Partner"} secondName={"Your pest-free partners"} description={"Once we start treatment, you can relax. We guarantee we’ll nix your pests and keep them from coming back. Or we'll come back between treatments at no additional cost to you."} image={"partner"}/>
+                      </SwiperSlide>
+                  </div>
+              </Swiper>
+              <div className={'button-container-service'}>
+                  <Link to={"/contact-us"}>
+                      <button className={'service-button-style'}>
+                          <p className="service-button-text">Get Started Today</p>
+                      </button>
+                  </Link>
               </div>
           </div>
 

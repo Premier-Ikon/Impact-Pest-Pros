@@ -242,6 +242,16 @@
     height: 330px;
 }
 
+.swiper-element-service {
+    margin-top: 55px;
+    height: 270px;
+}
+
+.swiper-element-process {
+    margin-top: 20px;
+    height: 450px;
+}
+
 .swiper-element-tall {
     margin-top: 20px;
     height: 350px;
@@ -374,7 +384,7 @@
     }
 
     .offerings-container {
-        display: none;
+        /*display: none;*/
     }
 
     .offerings-container-mobile {
@@ -502,5 +512,10 @@
 
     .button-container-service {
         margin-top: 30px;
+    }
+
+    .swiper-element-service {
+        margin-top: 55px;
+        height: 220px;
     }
 }

@@ -43,7 +43,7 @@ function RodentControlScreen() {
     return(
         <div className="rodent-control">
             <div className="background-image-rodent">
-                <div className="mask">
+                {/*<div className="mask">*/}
                     <div className="welcome-container-service">
                         <div className="welcome-header">
                             <h1>Rodent Control</h1>
@@ -53,9 +53,9 @@ function RodentControlScreen() {
                         </div>
                     </div>
                     <div className='welcome-buttons'>
-                        <Button buttonStyle={"btn--services"} path={"/contact-us"}>Free Quote</Button>
+                        <Button buttonStyle={"btn--services-grey"} path={"/contact-us"}>Free Quote</Button>
                     </div>
-                </div>
+                {/*</div>*/}
             </div>
             <div className="service-ad-header">
                 <div className="general-header">

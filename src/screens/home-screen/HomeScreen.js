@@ -12,9 +12,6 @@ import {Button} from '../../components/Buttons'
 import {ImageElements} from "../../components/ImageElements/ImageElements";
 import {ExclusionElement} from "../../components/ExclusionElement/ExclusionElement";
 import {CustomerReview} from "../../components/CustomerReview/CustomerReview"
-import CustomerSupport from '../../assets/CUSTOMER-SUPPORT.png'
-import PaymentProcess from '../../assets/PAYMENT-PROCESS.png'
-import Scheduling from '../../assets/SCHEDULING.png'
 import Integrity from '../../assets/INTEGRITY.png'
 import BeesImage from '../../assets/BEE-ICON.png'
 import BirdImage from '../../assets/BIRD-ICON.png'
@@ -22,6 +19,16 @@ import SpiderImage from '../../assets/SPIDER-ICON.png'
 import RodentImage from '../../assets/RODENT-ICON.png'
 import {Link} from "react-router-dom";
 import AdLogo from "../../assets/AD-LOGO.png";
+import ProtectFamily from "../../assets/PROTECT-FAMILY.png"
+import ProtectFriends from "../../assets/PROTECT-FRIENDS.png"
+import ProtectHome from "../../assets/PROTECT-HOME.png"
+import ProtectPets from "../../assets/PROTECT-PETS.png"
+import OnTime from "../../assets/ON-TIME.png"
+import FamilyOwned from "../../assets/FAMILY-OWNED.png"
+import CustomerService from "../../assets/CUSTOMER-SERVICE.png"
+
+
+
 
 
 function HomeScreen() {
@@ -125,21 +132,14 @@ function HomeScreen() {
                 </div>
                 <div className="benefits-elements">
                     {/* eslint-disable-next-line react/style-prop-object */}
-                    <ImageElements image={CustomerSupport} description={"Protect Your Family"} style={"white"}/>
+                    <ImageElements image={ProtectFamily} description={"Protect Your Family"} style={"white"} link={'contact-us'}/>
                     {/* eslint-disable-next-line react/style-prop-object */}
-                    <ImageElements image={PaymentProcess} description={"Protect Your Pets"} style={"white"}/>
+                    <ImageElements image={ProtectPets} description={"Protect Your Pets"} style={"white"} link={'contact-us'}/>
                     {/* eslint-disable-next-line react/style-prop-object */}
-                    <ImageElements image={Integrity} description={"Protect Your Home"} style={"white"}/>
+                    <ImageElements image={ProtectHome} description={"Protect Your Home"} style={"white"} link={'contact-us'}/>
                     {/* eslint-disable-next-line react/style-prop-object */}
-                    <ImageElements image={Scheduling} description={"Pest Free Home"} style={"white"}/>
+                    <ImageElements image={ProtectFriends} description={"Protect Your Friends"} style={"white"} link={'contact-us'}/>
                 </div>
-                {/*<div className={'button-container-pest-control'}>*/}
-                {/*    <Link to={"/contact-us"}>*/}
-                {/*        <button className={'pest-control-button-style'}>*/}
-                {/*            <p className="service-button-text">Get Started Today</p>*/}
-                {/*        </button>*/}
-                {/*    </Link>*/}
-                {/*</div>*/}
             </div>
             <div className="benefits-container-mobile">
                 <div className="white-header-mobile">
@@ -150,15 +150,15 @@ function HomeScreen() {
                 </div>
                 <div className="benefits-elements-mobile">
                     {/* eslint-disable-next-line react/style-prop-object */}
-                    <ImageElements image={CustomerSupport} description={"Protect Your Family"} style={"white"}/>
+                    <ImageElements image={ProtectFamily} description={"Protect Your Family"} style={"white"} link={'contact-us'}/>
                     {/* eslint-disable-next-line react/style-prop-object */}
-                    <ImageElements image={PaymentProcess} description={"Protect Your Pets"} style={"white"}/>
+                    <ImageElements image={ProtectPets} description={"Protect Your Pets"} style={"white"} link={'contact-us'}/>
                 </div>
                 <div className="benefits-elements-mobile">
                     {/* eslint-disable-next-line react/style-prop-object */}
-                    <ImageElements image={Integrity} description={"Protect Your Home"} style={"white"}/>
+                    <ImageElements image={ProtectHome} description={"Protect Your Home"} style={"white"} link={'contact-us'}/>
                     {/* eslint-disable-next-line react/style-prop-object */}
-                    <ImageElements image={Scheduling} description={"Pest Free Home"} style={"white"}/>
+                    <ImageElements image={ProtectFriends} description={"Protect Your Friends"} style={"white"} link={'contact-us'}/>
                 </div>
             </div>
 
@@ -229,21 +229,14 @@ function HomeScreen() {
                 </div>
                 <div className="benefits-elements">
                     {/* eslint-disable-next-line react/style-prop-object */}
-                    <ImageElements image={CustomerSupport} description={"Family Owned"} style={"white"}/>
+                    <ImageElements image={FamilyOwned} description={"Family Owned"} style={"white"} link={'contact-us'}/>
                     {/* eslint-disable-next-line react/style-prop-object */}
-                    <ImageElements image={PaymentProcess} description={"Company Integrity"} style={"white"}/>
+                    <ImageElements image={Integrity} description={"Company Integrity"} style={"white"} link={'contact-us'}/>
                     {/* eslint-disable-next-line react/style-prop-object */}
-                    <ImageElements image={Integrity} description={"Customer Service"} style={"white"}/>
+                    <ImageElements image={CustomerService} description={"Customer Service"} style={"white"} link={'contact-us'}/>
                     {/* eslint-disable-next-line react/style-prop-object */}
-                    <ImageElements image={Scheduling} description={"On Time Services"} style={"white"}/>
+                    <ImageElements image={OnTime} description={"On Time Services"} style={"white"} link={'contact-us'}/>
                 </div>
-                {/*<div className={'button-container-pest-control'}>*/}
-                {/*    <Link to={"/contact-us"}>*/}
-                {/*        <button className={'pest-control-button-style'}>*/}
-                {/*            <p className="service-button-text">Get Started Today</p>*/}
-                {/*        </button>*/}
-                {/*    </Link>*/}
-                {/*</div>*/}
             </div>
             <div className="benefits-container-mobile">
                 <div className="white-header-mobile">
@@ -254,15 +247,15 @@ function HomeScreen() {
                 </div>
                 <div className="benefits-elements-mobile">
                     {/* eslint-disable-next-line react/style-prop-object */}
-                    <ImageElements image={CustomerSupport} description={"Family Owned"} style={"white"}/>
+                    <ImageElements image={FamilyOwned} description={"Family Owned"} style={"white"} link={'contact-us'}/>
                     {/* eslint-disable-next-line react/style-prop-object */}
-                    <ImageElements image={PaymentProcess} description={"Company Integrity"} style={"white"}/>
+                    <ImageElements image={Integrity} description={"Company Integrity"} style={"white"} link={'contact-us'}/>
                 </div>
                 <div className="benefits-elements-mobile">
                     {/* eslint-disable-next-line react/style-prop-object */}
-                    <ImageElements image={Integrity} description={"Customer Service"} style={"white"}/>
+                    <ImageElements image={CustomerService} description={"Customer Service"} style={"white"} link={'contact-us'}/>
                     {/* eslint-disable-next-line react/style-prop-object */}
-                    <ImageElements image={Scheduling} description={"On Time Services"} style={"white"}/>
+                    <ImageElements image={OnTime} description={"On Time Services"} style={"white"} link={'contact-us'}/>
                 </div>
             </div>
 
@@ -274,7 +267,7 @@ function HomeScreen() {
                     <div className="vertical-line"/>
                     <div className="lower-container">
                         <div className="service-ad-text">
-                            <p className="test">Insects are swarming nationwide and your home needs protection. Luckily, our pest protection plans start as low as $23/mo. Click below to get your FREE quote and ensure your home is protected from pests in order to make your home happy and clean.</p>
+                            <p className="test">Insects are swarming nationwide and your home needs protection. Luckily, our pest protection plans start as low as $23/mo. Click below to get your <b>FREE</b> quote and ensure your home is protected from pests in order to make your home happy and clean.</p>
                         </div>
                         <div className="internal-ad-button">
                             <Link to={"/contact-us"}>

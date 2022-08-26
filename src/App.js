@@ -11,12 +11,13 @@ import BirdControlScreen from "./screens/bird-control-screen/BirdControlScreen";
 import RodentControlScreen from "./screens/rodent-control-screen/RodentControlScreen";
 import BeeRemovalScreen from "./screens/bee-removal-screen/BeeRemovalScreen";
 import Navbar from './components/Navbar/Navbar';
-
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop/>
         <Navbar />
         <Routes>
           <Route path='/' exact element={<HomeScreen/>} />
