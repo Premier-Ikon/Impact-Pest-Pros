@@ -53,7 +53,7 @@ function ContactUsScreen() {
         alert("Thank you for your submission.")
     }
     return (
-        <div>
+        <div className="contact-body">
             <div className="contact-header">
                 <div className="header-content">
                     <h3 className="contact-header-text-form">Get In Touch</h3>
@@ -63,7 +63,6 @@ function ContactUsScreen() {
                 </div>
             </div>
             <div className="contact-container">
-
                 <div className="form-data">
                     <form ref={form} onSubmit={handleSubmit}>
                         <h3 className="contact-header-text">Free Quote</h3>
@@ -185,6 +184,8 @@ function ContactUsScreen() {
                     </div>
                 </div>
             </div>
+
+
             <div className="contact-container-mobile">
                 <div className="container-mobile">
                     <div className="contact-info">

@@ -112,14 +112,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 100px;
+    margin-top: 45px;
 }
 
 .pest-control-elements {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 55px;
+    margin-top: 45px;
 }
 
 .benefits-container {
@@ -202,7 +202,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 100px;
+    margin-top: 45px;
 }
 
 .contact-form {
@@ -244,7 +244,7 @@
 
 .swiper-element-service {
     margin-top: 55px;
-    height: 270px;
+    height: 285px;
 }
 
 .swiper-element-process {
@@ -271,6 +271,14 @@
     border-radius: 30px;
 }
 
+.free-quote-button-style {
+    border-color: transparent;
+    height: 40px;
+    width: 200px;
+    background-color: white;
+    border-radius: 30px;
+}
+
 .pest-control-button-style {
     border-color: transparent;
     height: 40px;
@@ -289,6 +297,12 @@
 
 .service-button-text {
     color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.free-quote-button-text {
+    color: rgb(31, 49, 59, 100);
     font-size: 18px;
     font-weight: 600;
 }
@@ -516,6 +530,10 @@
 
     .swiper-element-service {
         margin-top: 55px;
-        height: 220px;
+        height: 290px;
+    }
+
+    .free-quote-button-style {
+        display: revert;
     }
 }

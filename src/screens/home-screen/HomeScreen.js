@@ -272,7 +272,7 @@ function HomeScreen() {
                         <div className="internal-ad-button">
                             <Link to={"/contact-us"}>
                                 <button className="service-ad-button">
-                                    <p>Free Quote</p>
+                                    <p className="service-button-text">Free Quote</p>
                                 </button>
                             </Link>
                         </div>
@@ -297,10 +297,10 @@ function HomeScreen() {
                 >
                     <div className="test-test">
                         <SwiperSlide className="test-test">
-                            <CustomerReview name={"Patty E."} review={'"We contacted Impact Pest Pros for there services and I talked to the Business owner Andres. He was very honest and open about our immediate problem. He came to our home and took care of our issue. He answered all of our questions and was very knowledgeable! I would highly recommend him with any pest problem in your home."'}/>
+                            <CustomerReview name={"McKayla G."} review={'"They provide great service with clean and safe products. Having safe products was a big thing I wanted at my home because I have pets. Since having impact pest pros service my house the site of bugs and insects and greatly decreased. They spend good time at my home so they can make sure everything is done correctly. They are very accommodating if I have a problem they will do their best to get out as quick as possible."'}/>
                         </SwiperSlide>
                         <SwiperSlide className="test-test">
-                            <CustomerReview name={"McKayla G."} review={'"They provide great service with clean and safe products. Having safe products was a big thing I wanted at my home because I have pets. Since having impact pest pros service my house the site of bugs and insects and greatly decreased. They spend good time at my home so they can make sure everything is done correctly. They are very accommodating if I have a problem they will do their best to get out as quick as possible."'}/>
+                            <CustomerReview name={"Patty E."} review={'"We contacted Impact Pest Pros for there services and I talked to the Business owner Andres. He was very honest and open about our immediate problem. He came to our home and took care of our issue. He answered all of our questions and was very knowledgeable! I would highly recommend him with any pest problem in your home."'}/>
                         </SwiperSlide>
                         <SwiperSlide className="test-test">
                             <CustomerReview name={"Ferney E."} review={'"We have been very pleased with Impact Pest Pros, ever since we\'ve used them we no longer have random insects coming inside .We are on 5 acres of land and have plenty of wild life. They are timely and professional, I will continue with there service .\n' +
@@ -329,6 +329,8 @@ function HomeScreen() {
                     </Link>
                 </div>
             </div>
+
+
             <div className="review-container-mobile">
                 <div className="general-header">
                     <h2>What Our Customers Are Saying</h2>
@@ -375,16 +377,24 @@ function HomeScreen() {
                 <div className="general-header-white">
                     <h2>Get a FREE Quote Today</h2>
                 </div>
-                <div className="quote-button">
-                    <Button buttonStyle={"btn--common-2"} path={"/contact-us"} target={"_blank"}>Free Quote</Button>
+                <div className={'button-container-service'}>
+                    <Link to={"/contact-us"}>
+                        <button className={'free-quote-button-style'}>
+                            <p className="free-quote-button-text">Free Quote</p>
+                        </button>
+                    </Link>
                 </div>
             </div>
             <div className="quote-container-mobile">
                 <div className="white-header-mobile">
                     <h2>Get a FREE Quote Today</h2>
                 </div>
-                <div className="quote-button-mobile">
-                    <Button buttonStyle={"btn--common-2"} path={"/contact-us"} target={"_blank"}>Free Quote</Button>
+                <div className={'button-container-service'}>
+                    <Link to={"/contact-us"}>
+                        <button className={'free-quote-button-style'}>
+                            <p className="free-quote-button-text">Free Quote</p>
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -7,12 +7,15 @@ import LeftProcessElement from "../../components/LeftProcessElement/LeftProcessE
 import FaqElement from "../../components/FaqElement/FaqElement";
 import {A11y, Navigation, Pagination, Scrollbar} from "swiper";
 import {Swiper, SwiperSlide} from "swiper/react";
-import {CustomerReview} from "../../components/CustomerReview/CustomerReview";
-import {ImageElements} from "../../components/ImageElements/ImageElements";
+import {ImageElement2} from "../../components/ImageElement2/ImageElement2"
 import SpiderImage from "../../assets/SPIDER-ICON.png";
 import BirdImage from "../../assets/BIRD-ICON.png";
 import RodentImage from "../../assets/RODENT-ICON.png";
 import BeesImage from "../../assets/BEE-ICON.png";
+import BeesBrown from "../../assets/BEE-ICON-BROWN-01.png"
+import SpiderBrown from "../../assets/SPIDER-ICON-BROWN-01.png"
+import BirdBrown from "../../assets/BIRD-ICON-BROWN-01.png"
+import RodentBrown from "../../assets/RODENT-ICON-BROWN-01.png"
 import {Link} from "react-router-dom";
 
 function ServicesScreen() {
@@ -62,7 +65,7 @@ function ServicesScreen() {
                 // install Swiper modules
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={10}
-                slidesPerView={3}
+                slidesPerView={4}
                 navigation
                 pagination={{ clickable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
@@ -71,28 +74,34 @@ function ServicesScreen() {
             >
                 <div className="test-test">
                     <SwiperSlide className="test-test">
-                        <ImageElements image={SpiderImage} description={"Pest Control"} style={"general"} link={'pest-control'}/>
+                        {/* eslint-disable-next-line react/style-prop-object */}
+                        <ImageElement2 image={SpiderBrown} description={"Pest Control"} style={"general"} link={'pest-control'}/>
                     </SwiperSlide>
                     <SwiperSlide className="test-test">
-                        <ImageElements image={BirdImage} description={"Bird Control"} style={"general"} link={'bird-control'}/>
+                        {/* eslint-disable-next-line react/style-prop-object */}
+                        <ImageElement2 image={BirdBrown} description={"Bird Control"} style={"general"} link={'bird-control'}/>
                     </SwiperSlide>
                     <SwiperSlide className="test-test">
-                        <ImageElements image={RodentImage} description={"Rodent Control"} style={"general"} link={'rodent-control'}/>
+                        {/* eslint-disable-next-line react/style-prop-object */}
+                        <ImageElement2 image={RodentBrown} description={"Rodent Control"} style={"general"} link={'rodent-control'}/>
                     </SwiperSlide>
                     <SwiperSlide className="test-test">
-                        <ImageElements image={BeesImage} description={"Bee Removal"} style={"general"} link={'bee-removal'}/>
+                        {/* eslint-disable-next-line react/style-prop-object */}
+                        <ImageElement2 image={BeesBrown} description={"Bee Removal"} style={"general"} link={'bee-removal'}/>
                     </SwiperSlide>
                 </div>
             </Swiper>
         </div>
-          <div className="service-background-image-mobile">
-              <div className="general-header">
-                  <h3 className="black-header">All Services</h3>
+          <div className="service-background-mobile">
+              <div className={"service-background-image-mobile"}>
+                  <div className="general-header">
+                      <h3 className="black-header">All Services</h3>
+                  </div>
               </div>
               <Swiper
                   // install Swiper modules
                   modules={[Navigation, Pagination, Scrollbar, A11y]}
-                  spaceBetween={10}
+                  spaceBetween={0}
                   slidesPerView={1}
                   navigation
                   pagination={{ clickable: true }}
@@ -102,16 +111,20 @@ function ServicesScreen() {
               >
                   <div className="test-test">
                       <SwiperSlide className="test-test">
-                          <ImageElements image={SpiderImage} description={"Pest Control"} style={"general"} link={'pest-control'}/>
+                          {/* eslint-disable-next-line react/style-prop-object */}
+                          <ImageElement2 image={SpiderImage} description={"Pest Control"} style={"general"} link={'pest-control'}/>
                       </SwiperSlide>
                       <SwiperSlide className="test-test">
-                          <ImageElements image={BirdImage} description={"Bird Control"} style={"general"} link={'bird-control'}/>
+                          {/* eslint-disable-next-line react/style-prop-object */}
+                          <ImageElement2 image={BirdImage} description={"Bird Control"} style={"general"} link={'bird-control'}/>
                       </SwiperSlide>
                       <SwiperSlide className="test-test">
-                          <ImageElements image={RodentImage} description={"Rodent Control"} style={"general"} link={'rodent-control'}/>
+                          {/* eslint-disable-next-line react/style-prop-object */}
+                          <ImageElement2 image={RodentImage} description={"Rodent Control"} style={"general"} link={'rodent-control'}/>
                       </SwiperSlide>
                       <SwiperSlide className="test-test">
-                          <ImageElements image={BeesImage} description={"Bee Removal"} style={"general"} link={'bee-removal'}/>
+                          {/* eslint-disable-next-line react/style-prop-object */}
+                          <ImageElement2 image={BeesImage} description={"Bee Removal"} style={"general"} link={'bee-removal'}/>
                       </SwiperSlide>
                   </div>
               </Swiper>
@@ -129,10 +142,11 @@ function ServicesScreen() {
               </div>
           </div>
           <div className="offerings-container-mobile">
-              <div className="general-header">
-                  <h2>A Process You</h2>
-                  <h2>Can Trust</h2>
-
+              <div className={"service-background-image-mobile-process"}>
+                  <div className="general-header">
+                      <h2>A Process You</h2>
+                      <h2>Can Trust</h2>
+                  </div>
               </div>
               <Swiper
                   // install Swiper modules

@@ -122,6 +122,13 @@ function BirdControlScreen() {
                     <ExclusionElement icon={"fa-solid fa-user-shield"} description={"Exclusion"} quote={"First, we will remove any birds from the affected area. Then, we will seal off all entry points and landings to keep them from re-landing on the affected area. "}/>
                     <ExclusionElement icon={"fa-solid fa-house-chimney"} description={"Annual Inspection"} quote={"We will conduct an annual inspection each year for as long as you keep your plan. We will inspect previously affected areas, as well as new potential vulnerabilities."}/>
                 </div>
+                <div className={'button-container-services'}>
+                    <Link to={"/contact-us"}>
+                        <button className={'service-button-style'}>
+                            <p className="service-button-text">Get Started Today</p>
+                        </button>
+                    </Link>
+                </div>
             </div>
             <div className="exclusion-container-mobile">
                 <div className="general-header-mobile">
@@ -170,7 +177,7 @@ function BirdControlScreen() {
                         <div>
                             <Link to={"/contact-us"}>
                                 <button className="service-ad-button">
-                                    <p>Free Quote</p>
+                                    <p className="service-button-text">Free Quote</p>
                                 </button>
                             </Link>
                         </div>

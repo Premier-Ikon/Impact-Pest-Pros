@@ -42,7 +42,7 @@ function BeeRemovalScreen() {
     }
     return(
         <div className="bird-control">
-            <div className="background-image-bird">
+            <div className="background-image-bee">
                 <div className="welcome-container-service">
                     <div className="center-container">
                         <div className="welcome-header">
@@ -107,7 +107,7 @@ function BeeRemovalScreen() {
                         <div>
                             <Link to={"/contact-us"}>
                                 <button className="service-ad-button">
-                                    <p>Free Quote</p>
+                                    <p className="service-button-text">Free Quote</p>
                                 </button>
                             </Link>
                         </div>
@@ -125,6 +125,13 @@ function BeeRemovalScreen() {
                                  quote={"First, we will remove any bees from your home. Then, we will seal up affected areas to keep them from re-entering your home. "}/>
                     <ExclusionElement icon={"fa-solid fa-hand"} description={"Prevention"}
                                  quote={"We will seal up the affected areas, in order to prevent bees from re-entering. Will also remove any hives at additional cost."}/>
+                </div>
+                <div className={'button-container-services'}>
+                    <Link to={"/contact-us"}>
+                        <button className={'service-button-style'}>
+                            <p className="service-button-text">Get Started Today</p>
+                        </button>
+                    </Link>
                 </div>
             </div>
             <div className="monthly-service-container-mobile">
@@ -155,6 +162,13 @@ function BeeRemovalScreen() {
                                      quote={"We will seal up the affected areas, in order to prevent bees from re-entering. Will also remove any hives at additional cost."}/>
                     </SwiperSlide>
                 </Swiper>
+                <div className={'button-container-service'}>
+                    <Link to={"/contact-us"}>
+                        <button className={'service-button-style'}>
+                            <p className="service-button-text">Get Started Today</p>
+                        </button>
+                    </Link>
+                </div>
             </div>
 
             <div className="faq-section">

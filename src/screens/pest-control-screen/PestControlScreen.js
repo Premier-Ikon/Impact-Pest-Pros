@@ -125,7 +125,7 @@ function PestControlScreen() {
                         <div className="internal-ad-button">
                             <Link to={"/contact-us"}>
                                 <button className="service-ad-button">
-                                    <p>Free Quote</p>
+                                    <p className="service-button-text">Free Quote</p>
                                 </button>
                             </Link>
                         </div>

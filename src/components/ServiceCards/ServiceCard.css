@@ -104,6 +104,7 @@
     font-size: 15px;
     border: 2px solid var(--primary);
     color: var(--primary);
+    font-weight: 600;
 }
 
 .card-button:hover {
@@ -113,9 +114,12 @@
 
 .button-container {
     /*margin-top: 50px;*/
-    position: absolute;
-    bottom: -650px;
-    margin-left: 60px;
+    /*position: absolute;*/
+    /*bottom: -650px;*/
+    /*margin-left: 60px;*/
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
 }
 
 @media screen and (max-width: 960px) {
@@ -125,7 +129,6 @@
 
     .button-container {
         position: revert;
-        padding-top: 20px;
     }
 
 

@@ -37,7 +37,7 @@ function ServiceCard({name, description1, description2, description3, image}) {
                     <div className="button-container">
                         <Link to={"/contact-us"}>
                             <button className="card-button">
-                                <p>Get Quote</p>
+                                <p >Get Quote</p>
                             </button>
                         </Link>
                     </div>

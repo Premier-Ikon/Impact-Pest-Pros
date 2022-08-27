@@ -104,6 +104,13 @@ function RodentControlScreen() {
                     <ExclusionElement icon={"fa-solid fa-house-chimney"} description={"Annual Inspection"}
                                  quote={"We will conduct an annual inspection each year for as long as you keep your plan. We will inspect previous entry points, as well as new vulnerabilities. "}/>
                 </div>
+                <div className={'button-container-services'}>
+                    <Link to={"/contact-us"}>
+                        <button className={'service-button-style'}>
+                            <p className="service-button-text">Get Started Today</p>
+                        </button>
+                    </Link>
+                </div>
             </div>
             <div className="monthly-service-container-mobile">
                 <div className="general-header-mobile">
@@ -155,7 +162,7 @@ function RodentControlScreen() {
                         <div>
                             <Link to={"/contact-us"}>
                                 <button className="service-ad-button">
-                                    <p>Free Quote</p>
+                                    <p className="service-button-text">Free Quote</p>
                                 </button>
                             </Link>
                         </div>
