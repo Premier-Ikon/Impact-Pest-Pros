@@ -35,7 +35,7 @@ function HomeScreen() {
     return (
         <div className="HomeScreen">
             <div className="call-today">
-                <button className="contact-info-button" onClick={() => window.open( 'tel: 951-458-3966', '_blank')}>
+                <button className="contact-info-button" onClick={() => window.open( 'tel: 951-458-3966', '_self')}>
                     <p className="call-today-text">Call Today! (951)458-3966</p>
                 </button>
             </div>

@@ -24,7 +24,7 @@ function AboutUsScreen() {
                             do
                             return, we will come back -- at no additional cost to you. We strive to offer the best plans
                             in the area, and will tailor to our customers needs. If you are ever experiencing a problem be sure to give us a call.
-                            <button className={"btn-button"} onClick={() => window.open( 'tel: 951-458-3966', '_blank')}>
+                            <button className={"btn-button"} onClick={() => window.open( 'tel: 951-458-3966', '_self')}>
                                 <p> (951)458-3966</p>
                             </button>
                         </h4>

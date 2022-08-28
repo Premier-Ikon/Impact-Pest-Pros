@@ -157,11 +157,11 @@ function ContactUsScreen() {
                 <div className="contact-info">
                     <h3 className="contact-header-text-right">Contact Information</h3>
                     <div className="contact-info-element">
-                        <button className="contact-info-button" onClick={() => window.open( 'tel: 951-458-3966', '_blank')}>
+                        <button className="contact-info-button" onClick={() => window.open( 'tel: 951-458-3966', '_self')}>
                             <i className="fa-solid fa-phone" style={{marginRight: "10px"}}/>
                         </button>
 
-                        <button className="contact-info-button" onClick={() => window.open( 'tel: 951-458-3966', '_blank')}>
+                        <button className="contact-info-button" onClick={() => window.open( 'tel: 951-458-3966', '_self')}>
                             <p>(951)458-3966</p>
                         </button>
                     </div>
@@ -191,10 +191,10 @@ function ContactUsScreen() {
                     <div className="contact-info">
                         <h3 className="contact-header-text-right">Contact Information</h3>
                         <div className="contact-info-element">
-                            <button className="contact-info-button" onClick={() => window.open( 'tel: 951-458-3966', '_blank')}>
+                            <button className="contact-info-button" onClick={() => window.open( 'tel: 951-458-3966', '_self')}>
                                 <i className="fa-solid fa-phone" style={{marginRight: "10px"}}/>
                             </button>
-                            <button className="contact-info-button" onClick={() => window.open( 'tel: 951-458-3966', '_blank')}>
+                            <button className="contact-info-button" onClick={() => window.open( 'tel: 951-458-3966', '_self')}>
                                 <p>(951)458-3966</p>
                             </button>
                         </div>
