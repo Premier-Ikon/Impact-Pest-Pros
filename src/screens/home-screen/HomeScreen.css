@@ -210,7 +210,7 @@
 }
 
 .quote-container {
-    margin-top: 100px;
+    margin-top: 55px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -219,8 +219,8 @@
     border-top-right-radius: 18px;
     border-top-left-radius: 18px;
     border-radius: 18px;
-    height: 325px;
-    /*margin-bottom: 100px;*/
+    height: 175px;
+    margin-bottom: 100px;
 }
 
 .quote-container-mobile {

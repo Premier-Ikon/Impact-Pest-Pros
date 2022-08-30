@@ -166,11 +166,11 @@ function ContactUsScreen() {
                         </button>
                     </div>
                     <div className="contact-info-element-bottom">
-                        <button className="contact-info-button" onClick={() => window.open( "mailto: info@impactpestpros.com?subject=Online Inquiry")}>
+                        <button className="contact-info-button" onClick={() => window.open( "mailto: info@impactpestpros.com?subject=Online Inquiry", '_self')}>
                             <i className="fa-solid fa-envelope" style={{marginRight: "10px"}}/>
                         </button>
 
-                        <button className="contact-info-button" onClick={() => window.open( "mailto: info@impactpestpros.com?subject=Online Inquiry")}>
+                        <button className="contact-info-button" onClick={() => window.open( "mailto: info@impactpestpros.com?subject=Online Inquiry", '_self')}>
                             <p>info@impactpestpros.com</p>
                         </button>
                     </div>
@@ -199,10 +199,10 @@ function ContactUsScreen() {
                             </button>
                         </div>
                         <div className="contact-info-element-bottom">
-                            <button className="contact-info-button" onClick={() => window.open( "mailto: info@impactpestpros.com?subject=Online Inquiry")}>
+                            <button className="contact-info-button" onClick={() => window.open( "mailto: info@impactpestpros.com?subject=Online Inquiry", '_self')}>
                                 <i className="fa-solid fa-envelope" style={{marginRight: "10px"}}/>
                             </button>
-                            <button className="contact-info-button" onClick={() => window.open( "mailto: info@impactpestpros.com?subject=Online Inquiry")}>
+                            <button className="contact-info-button" onClick={() => window.open( "mailto: info@impactpestpros.com?subject=Online Inquiry", '_self')}>
                                 <p>info@impactpestpros.com</p>
                             </button>
                         </div>
