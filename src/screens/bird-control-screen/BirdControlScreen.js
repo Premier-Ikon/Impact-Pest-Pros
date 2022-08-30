@@ -83,8 +83,8 @@ function BirdControlScreen() {
                     <h2>Get Started With Bird Control</h2>
                 </div>
                 <div className="card-container">
-                    <ServiceCard name={"Bi-Monthly Bird Control"} description1={"Initial interior and exterior inspection and treatment discover any vulnerabilities and identify them"} description2={"Ongoing exterior treatments scheduled bi-monthly"} description3={"Protection that is guaranteed for as long as you keep your plan."} image={"bi-monthly-pest"}/>
-                    <ServiceCard name={"One-time Bird Control"} description1={"One single bird control service includes a comprehensive exterior inspection and treatment"} description2={"Our technician will find the affected area and work to prevent the problem"} description3={"If birds come back to initial area within 30 days we will come back at no additional cost"} image={"one-time-pest"}/>
+                    <ServiceCard name={"One-Time Bird Exclusion"} description1={"Initial exterior inspection of affected area in order to discover any vulnerabilities"} description2={"Generate a quote to give to the customer and make sure we are able to communicate the provided plan"} description3={"Perform the exclusion in order to prevent birds from entering the affected area"} image={"bi-monthly-pest"}/>
+                    <ServiceCard name={"One-Time Bird Cleaning"} description1={"Initial exterior inspection of impacted area in order to determine a good plan for cleaning impacted area"} description2={"We will generate a quote in order to make sure customer knows what is getting cleaned"} description3={"Clean the impacted area whether it is a roof, solar panel, or area around home"} image={"one-time-pest"}/>
                 </div>
             </div>
             <div className="service-ad-header-mobile">
@@ -104,10 +104,10 @@ function BirdControlScreen() {
                         className={"swiper-element-services"}
                     >
                         <SwiperSlide className="test-test">
-                            <ServiceCard name={"Bi-Monthly Bird Control"} description1={"Initial interior and exterior inspection and treatment discover any vulnerabilities and identify them"} description2={"Ongoing exterior treatments scheduled bi-monthly"} description3={"Protection that is guaranteed for as long as you keep your plan."} image={"bi-monthly-pest"}/>
+                            <ServiceCard name={"One-Time Bird Exclusion"} description1={"Initial exterior inspection of affected area in order to discover any vulnerabilities"} description2={"Generate a quote to give to the customer and make sure we are able to communicate the provided plan"} description3={"Perform the exclusion in order to prevent birds from entering the affected area"} image={"bi-monthly-pest"}/>
                         </SwiperSlide>
                         <SwiperSlide className="test-test">
-                            <ServiceCard name={"One-time Bird Control"} description1={"One single bird control service includes a comprehensive exterior inspection and treatment"} description2={"Our technician will find the affected area and work to prevent the problem"} description3={"If birds come back to initial area within 30 days we will come back at no additional cost"} image={"one-time-pest"}/>
+                            <ServiceCard name={"One-Time Bird Cleaning"} description1={"Initial exterior inspection of impacted area in order to determine a good plan for cleaning impacted area"} description2={"We will generate a quote in order to make sure customer knows what is getting cleaned"} description3={"Clean the impacted area whether it is a roof, solar panel, or area around home"} image={"one-time-pest"}/>
                         </SwiperSlide>
                     </Swiper>
                 </div>
@@ -119,8 +119,8 @@ function BirdControlScreen() {
                 </div>
                 <div className="exclusion-elements">
                     <ExclusionElement icon={"fa-solid fa-magnifying-glass"} description={"Initial Inspection"} quote={"Your Impact Pest Pros professional will conduct a thorough inspection to determine how to exclude the birds from gathering on the area, which will lead to a decrease in bird presence and droppings."}/>
-                    <ExclusionElement icon={"fa-solid fa-user-shield"} description={"Exclusion"} quote={"First, we will remove any birds from the affected area. Then, we will seal off all entry points and landings to keep them from re-landing on the affected area. "}/>
-                    <ExclusionElement icon={"fa-solid fa-house-chimney"} description={"Annual Inspection"} quote={"We will conduct an annual inspection each year for as long as you keep your plan. We will inspect previously affected areas, as well as new potential vulnerabilities."}/>
+                    <ExclusionElement icon={"fa-solid fa-user-shield"} description={"Exclusion"} quote={"First, we will remove any birds from the affected area. Then, we will seal off all entry points and landings to keep them from re-landing on the affected area. We will also clean the affected area."}/>
+                    <ExclusionElement icon={"fa-solid fa-house-chimney"} description={"One-Time Inspection"} quote={"We will conduct a one-time inspection after the exclusion is done in order to ensure it is no longer the problem. We will inspect previously affected areas, as well as new potential vulnerabilities."}/>
                 </div>
                 <div className={'button-container-services'}>
                     <Link to={"/contact-us"}>
@@ -149,10 +149,10 @@ function BirdControlScreen() {
                         <ExclusionElement icon={"fa-solid fa-magnifying-glass"} description={"Initial Inspection"} quote={"Your Impact Pest Pros professional will conduct a thorough inspection to determine how to exclude the birds from gathering on the area, which will lead to a decrease in bird presence and droppings."}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <ExclusionElement icon={"fa-solid fa-user-shield"} description={"Exclusion"} quote={"First, we will remove any birds from the affected area. Then, we will seal off all entry points and landings to keep them from re-landing on the initially affected area."}/>
+                        <ExclusionElement icon={"fa-solid fa-user-shield"} description={"Exclusion"} quote={"First, we will remove any birds from the affected area. Then, we will seal off all entry points and landings to keep them from re-landing on the affected area. We will also clean the affected area."}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <ExclusionElement icon={"fa-solid fa-house-chimney"} description={"Annual Inspection"} quote={"We will conduct an annual inspection each year for as long as you keep your plan. We will inspect previously affected areas, as well as new potential vulnerabilities."}/>
+                        <ExclusionElement icon={"fa-solid fa-house-chimney"} description={"One-Time Inspection"} quote={"We will conduct a one-time inspection after the exclusion is done in order to ensure it is no longer the problem. We will inspect previously affected areas, as well as new potential vulnerabilities."}/>
                     </SwiperSlide>
                 </Swiper>
                 <div className={'button-container-service'}>

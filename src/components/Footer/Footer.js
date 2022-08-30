@@ -100,7 +100,10 @@ function Footer() {
                 </div>
                 <div className="lower-section">
                     <div className="lower-content">
-                        <h4 className="lower-text">© 2022 Impact Pest Pros Powered By Premier Ikon</h4>
+                        {/*<h4 className="lower-text">© 2022 Impact Pest Pros Powered By Premier Ikon</h4>*/}
+                        <button style={{backgroundColor: "transparent", borderColor: "transparent"}} onClick={() => window.open( 'https://www.facebook.com/impactpestpros', '_blank')}>
+                            <h4 className="lower-text">© 2022 Impact Pest Pros Powered By Premier Ikon</h4>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -185,7 +188,10 @@ function Footer() {
                         </button>
                     </div>
                     <div className="lower-content">
-                        <h4 className="lower-text">© 2022 Impact Pest Pros Powered By Premier Ikon</h4>
+                        {/*<h4 className="lower-text">© 2022 Impact Pest Pros Powered By Premier Ikon</h4>*/}
+                        <button style={{backgroundColor: "transparent", borderColor: "transparent", display: "revert", color: "black"}} onClick={() => window.open( 'https://www.facebook.com/impactpestpros', '_blank')}>
+                            <h4 className="lower-text">© 2022 Impact Pest Pros Powered By Premier Ikon</h4>
+                        </button>
                     </div>
                 </div>
             </div>
