@@ -21,6 +21,11 @@
     border-color: transparent;
     color: #525252;
     font-size: 16px;
+    cursor: pointer;
+}
+
+.footer-icon-button:hover {
+    font-weight: bold;
 }
 
 .footer-buttons {
@@ -81,6 +86,11 @@
     border-color: transparent;
     color: #525252;
     font-size: 16px;
+    cursor: pointer;
+}
+
+.footer-info-button:hover {
+    font-weight: bold;
 }
 
 .footer-info-element {

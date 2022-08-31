@@ -37,6 +37,7 @@
 .image-button {
     background-color: transparent;
     border-color: transparent;
+    cursor: pointer;
 }
 
 /*.mask {*/

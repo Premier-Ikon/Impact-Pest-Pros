@@ -92,9 +92,10 @@ function HomeScreen() {
                 <div className={'button-container-service'}>
                     <Link to={"/services"}>
                         <button className={'service-button-style'}>
-                            <p className="service-button-text">Vew All Services</p>
+                            <p className="service-button-text">View All Services</p>
                         </button>
                     </Link>
+
                 </div>
             </div>
             <div className="offerings-container-mobile">
@@ -116,7 +117,7 @@ function HomeScreen() {
                 <div className={'button-container-service'}>
                     <Link to={"/services"}>
                         <button className={'service-button-style'}>
-                            <p className="service-button-text">Vew All Services</p>
+                            <p className="service-button-text">View All Services</p>
                         </button>
                     </Link>
                 </div>
@@ -168,11 +169,11 @@ function HomeScreen() {
                 </div>
                 <div className="pest-control-elements">
                     <ExclusionElement icon={"fa-solid fa-magnifying-glass"} description={"Initial Inspection"}
-                                      quote={"Your Impact Pest Pros professional will conduct a thorough inspection to determine where and how your home is being impacted. "}/>
+                                      quote={"Your Impact Pest Pros professional will conduct a thorough inspection to determine where and how your home is being effected. "}/>
                     <ExclusionElement icon={"fa-solid fa-calendar-check"} description={"Service Plan"}
-                                      quote={"We offer a monthly, bi-monthly, and quarterly service when it comes to pest control. Choose the plan that best fits your needs."}/>
+                                      quote={"We offer a monthly, bi-monthly, and quarterly service plan when it comes to pest control. Choose the plan that best fits your needs."}/>
                     <ExclusionElement icon={"fa-solid fa-house-chimney"} description={"Pest Free Home"}
-                                      quote={"Once you choose the service plan that best fits your needs, our technicians will service you home and be sure to leave and impact."}/>
+                                      quote={"Once you choose the service plan that best fits your needs, our technician will service you home and be sure to leave and impact."}/>
                 </div>
                 <div className={'button-container-services'}>
                     <Link to={"/contact-us"}>
@@ -199,15 +200,15 @@ function HomeScreen() {
                 >
                     <SwiperSlide>
                         <ExclusionElement icon={"fa-solid fa-magnifying-glass"} description={"Initial Inspection"}
-                                          quote={"Your Impact Pest Pros professional will conduct a thorough inspection to determine where and how your home is being impacted. "}/>
+                                          quote={"Your Impact Pest Pros professional will conduct a thorough inspection to determine where and how your home is being effected. "}/>
                     </SwiperSlide>
                     <SwiperSlide>
                         <ExclusionElement icon={"fa-solid fa-calendar-check"} description={"Service Plan"}
-                                          quote={"We offer a monthly, bi-monthly, and quarterly service when it comes to pest control. Choose the plan that best fits your needs."}/>
+                                          quote={"We offer a monthly, bi-monthly, and quarterly service plan when it comes to pest control. Choose the plan that best fits your needs."}/>
                     </SwiperSlide>
                     <SwiperSlide>
                         <ExclusionElement icon={"fa-solid fa-house-chimney"} description={"Pest Free Home"}
-                                          quote={"Once you choose the service plan that best fits your needs, our technicians will service you home and be sure to leave and impact."}/>
+                                          quote={"Once you choose the service plan that best fits your needs, our technician will service you home and be sure to leave and impact."}/>
                     </SwiperSlide>
                 </Swiper>
                 <div className={'button-container-service'}>
@@ -303,7 +304,7 @@ function HomeScreen() {
                             <CustomerReview name={"Patty E."} review={'"We contacted Impact Pest Pros for there services and I talked to the Business owner Andres. He was very honest and open about our immediate problem. He came to our home and took care of our issue. He answered all of our questions and was very knowledgeable! I would highly recommend him with any pest problem in your home."'}/>
                         </SwiperSlide>
                         <SwiperSlide className="test-test">
-                            <CustomerReview name={"Ferney E."} review={'"We have been very pleased with Impact Pest Pros, ever since we\'ve used them we no longer have random insects coming inside .We are on 5 acres of land and have plenty of wild life. They are timely and professional, I will continue with there service .\n' +
+                            <CustomerReview name={"Ferney E."} review={'"We have been very pleased with Impact Pest Pros, ever since we\'ve used them we no longer have random insects coming inside. We are on 5 acres of land and have plenty of wild life. They are timely and professional, I will continue with there service .\n' +
                                 '\n' +
                                 'Andres is very knowledgeable and is very thorough with his work."'}/>
                         </SwiperSlide>
@@ -311,7 +312,7 @@ function HomeScreen() {
                             <CustomerReview name={"Jessica G."} review={'"Andres does a wonderful job at keeping the pests away. We had a ton of spiders and a bird problem on our solar panels and he took care of both and I couldn\'t be happier."'}/>
                         </SwiperSlide>
                         <SwiperSlide className="test-test">
-                            <CustomerReview name={"Felipe M."} review={'"We have had trouble with ants.Andres came to the rescue to help with the ants.Now we have them under control. Thanks Impact pest control."'}/>
+                            <CustomerReview name={"Felipe M."} review={'"We have had trouble with ants. Andres came to the rescue to help with the ants. Now we have them under control. Thanks Impact pest control."'}/>
                         </SwiperSlide>
                         <SwiperSlide className="test-test">
                             <CustomerReview name={"Rob C."} review={'"Andres and Impact Pest Pros are fantastic. I use Andres for two of our properties, Including an Airbnb. He\'s gone above and beyond to make sure that everything is perfect. I\'ve gone through quite a few pest control companies, and Andres is the best. My highest recommendation!"'}/>

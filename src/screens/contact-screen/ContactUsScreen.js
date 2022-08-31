@@ -50,16 +50,18 @@ function ContactUsScreen() {
             console.log(err)
         }
 
-        alert("Thank you for your submission.")
+        alert("Thank you for your inquiry, someone on our team will be in contact as soon as possible . \n\n" +
+            "Please allow 24 business hours for a response. If your inquiry is urgent please call us at (951)458-3966")
     }
     return (
         <div className="contact-body">
             <div className="contact-header">
                 <div className="header-content">
                     <h3 className="contact-header-text-form">Get In Touch</h3>
-                    <p className="contact-text">Please feel free to either give us a call
-                        or reach out at any time in order to get
-                        your pest control needs sorted out.</p>
+                    <p className="contact-text">Please feel free to give us a <button className={"btn-button-contact"} onClick={() => window.open( 'tel: 951-458-3966', '_self')}>
+                        <p>call</p>
+                    </button> or email us anytime to get your pest control needs sorted out.
+                    </p>
                 </div>
             </div>
             <div className="contact-container">
@@ -142,7 +144,7 @@ function ContactUsScreen() {
                             <textarea
                                 name={"message"}
                                 // rows={3}
-                                placeholder={"Enter Message"}
+                                placeholder={"Tell us a little more about your problem or needs"}
                                 autoComplete={"off"}
                                 value={message}
                                 className={"message-box"}
@@ -150,7 +152,7 @@ function ContactUsScreen() {
                             />
                         </div>
                         <div className={"submit-button-container"}>
-                            <input type={"submit"} value={"Submit"} className="submit-button"/>
+                            <input type={"submit"} style={{cursor: "pointer"}} value={"Submit"} className="submit-button"/>
                         </div>
                     </form>
                 </div>
@@ -296,7 +298,7 @@ function ContactUsScreen() {
                                 <textarea
                                     name={"message"}
                                     // rows={3}
-                                    placeholder={"Enter Message"}
+                                    placeholder={"Tell us a more about your needs"}
                                     autoComplete={"off"}
                                     value={message}
                                     className={"message-box"}
@@ -304,7 +306,7 @@ function ContactUsScreen() {
                                 />
                             </div>
                             <div className={"submit-button-container"}>
-                                <input type={"submit"} value={"Submit"} className="submit-button"/>
+                                <input type={"submit"} style={{cursor: "pointer"}} value={"Submit"} className="submit-button"/>
                             </div>
                         </form>
                     </div>

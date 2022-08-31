@@ -201,6 +201,20 @@
 
 .contact-info-button:hover {
     color: #eaeaea;
+    cursor: pointer;
+}
+
+.btn-button-contact {
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(67, 67, 67);
+    cursor: pointer;
+}
+
+.btn-button-contact:hover {
+    color: rgb(44, 44, 44);
 }
 
 @media screen and (max-width: 960px) {
@@ -209,6 +223,12 @@
         top: 180px;
         left: 25px;
         width: 85%;
+    }
+
+    .btn-button-contact {
+        display: revert;
+        font-size: 20px;
+
     }
 
     .contact-header-text-form {

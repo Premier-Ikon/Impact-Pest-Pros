@@ -20,12 +20,12 @@ function Footer() {
                             <button className="footer-icon-button" onClick={() => window.open( 'https://www.facebook.com/impactpestpros', '_blank')}>
                                 <i className="fa-brands fa-facebook" style={{marginRight: "10px", fontSize: "26px", color: "black"}}/>
                             </button>
-                            <button className="footer-icon-button" onClick={() => window.open( 'https://www.facebook.com/impactpestpros', '_blank')}>
+                            <button className="footer-icon-button" onClick={() => window.open( 'https://www.yelp.com/biz/impact-pest-pros-wildomar?osq=impact+pest+pros&sort_by=relevance_desc', '_blank')}>
                                 <i className="fa-brands fa-yelp" style={{marginRight: "10px", fontSize: "26px", color: "black"}}/>
                             </button>
-                            <button className="footer-icon-button" onClick={() => window.open( 'https://www.facebook.com/impactpestpros', '_blank')}>
-                                <i className="fa-brands fa-google" style={{marginRight: "10px", fontSize: "26px", color: "black"}}/>
-                            </button>
+                            {/*<button className="footer-icon-button" onClick={() => window.open( 'https://www.facebook.com/impactpestpros', '_blank')}>*/}
+                            {/*    <i className="fa-brands fa-google" style={{marginRight: "10px", fontSize: "26px", color: "black"}}/>*/}
+                            {/*</button>*/}
                         </div>
                     </div>
                     <div className="footer-right">
@@ -101,7 +101,7 @@ function Footer() {
                 <div className="lower-section">
                     <div className="lower-content">
                         {/*<h4 className="lower-text">© 2022 Impact Pest Pros Powered By Premier Ikon</h4>*/}
-                        <button style={{backgroundColor: "transparent", borderColor: "transparent"}} onClick={() => window.open( 'https://www.facebook.com/impactpestpros', '_blank')}>
+                        <button style={{backgroundColor: "transparent", borderColor: "transparent", cursor: "pointer"}} onClick={() => window.open( 'https://www.facebook.com/impactpestpros', '_blank')}>
                             <h4 className="lower-text">© 2022 Impact Pest Pros Powered By Premier Ikon</h4>
                         </button>
                     </div>

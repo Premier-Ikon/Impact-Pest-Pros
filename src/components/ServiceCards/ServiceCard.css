@@ -105,6 +105,7 @@
     border: 2px solid var(--primary);
     color: var(--primary);
     font-weight: 600;
+    cursor: pointer;
 }
 
 .card-button:hover {
