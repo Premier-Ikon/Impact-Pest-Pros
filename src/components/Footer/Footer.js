@@ -23,9 +23,9 @@ function Footer() {
                             <button className="footer-icon-button" onClick={() => window.open( 'https://www.yelp.com/biz/impact-pest-pros-wildomar?osq=impact+pest+pros&sort_by=relevance_desc', '_blank')}>
                                 <i className="fa-brands fa-yelp" style={{marginRight: "10px", fontSize: "26px", color: "black"}}/>
                             </button>
-                            {/*<button className="footer-icon-button" onClick={() => window.open( 'https://www.facebook.com/impactpestpros', '_blank')}>*/}
-                            {/*    <i className="fa-brands fa-google" style={{marginRight: "10px", fontSize: "26px", color: "black"}}/>*/}
-                            {/*</button>*/}
+                            <button className="footer-icon-button" onClick={() => window.open( 'http://www.google.com/search?q=impact+pest+pros', '_blank')}>
+                                <i className="fa-brands fa-google" style={{marginRight: "10px", fontSize: "26px", color: "black"}}/>
+                            </button>
                         </div>
                     </div>
                     <div className="footer-right">
