@@ -1,4 +1,5 @@
 import './App.css';
+import {useEffect} from 'react';
 
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
@@ -14,7 +15,15 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer'
 import ScrollToTop from "./ScrollToTop";
 
+import ReactGA from 'react-ga'
+const TRACKING_ID = "G-P32TLG0VRW"; // OUR_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
+
 function App() {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   return (
     <div className="App">
       <Router>
