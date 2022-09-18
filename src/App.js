@@ -16,10 +16,10 @@ import Footer from './components/Footer/Footer'
 import ScrollToTop from "./ScrollToTop";
 
 import ReactGA from 'react-ga'
-const TRACKING_ID = "G-P32TLG0VRW"; // OUR_TRACKING_ID
+const TRACKING_ID = "UA-240262658-1"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
-function App() {
+export default function App() {
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
@@ -52,4 +52,3 @@ function App() {
   );
 }
 
-export default App;
