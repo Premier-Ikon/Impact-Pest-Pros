@@ -101,7 +101,7 @@ function Footer() {
                 <div className="lower-section">
                     <div className="lower-content">
                         {/*<h4 className="lower-text">© 2022 Impact Pest Pros Powered By Premier Ikon</h4>*/}
-                        <button style={{backgroundColor: "transparent", borderColor: "transparent", cursor: "pointer"}} onClick={() => window.open( 'https://www.facebook.com/impactpestpros', '_blank')}>
+                        <button style={{backgroundColor: "transparent", borderColor: "transparent", cursor: "pointer"}} onClick={() => window.open( 'https://www.premierikon.com', '_blank')}>
                             <h4 className="lower-text">© 2022 Impact Pest Pros Powered By Premier Ikon</h4>
                         </button>
                     </div>
