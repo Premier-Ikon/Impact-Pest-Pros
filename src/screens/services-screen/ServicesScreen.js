@@ -33,7 +33,7 @@ function ServicesScreen() {
         },
         {
             question: 'Are your technicians trained and certified?',
-            answer: 'Yes all of our techinisions are trained and certified and will provide an extremely good service.',
+            answer: 'Yes all of our technicians are trained and certified and will provide an extremely good service.',
             open: false
         },
         {
